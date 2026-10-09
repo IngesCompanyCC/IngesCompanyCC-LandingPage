@@ -236,3 +236,63 @@ h1 {
 .floating-card strong {
   color: #0F172A;
 }
+
+
+/* ---------- Workspace ---------- */
+
+.segment-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 28px 30px 30px;
+  border: 2px solid var(--teal);
+  border-top-width: 6px;
+  border-radius: var(--radius);
+  background: #fff;
+  box-shadow: var(--shadow);
+}
+
+.segment-card h3 {
+  font-size: 22px;
+}
+
+.segment-card p {
+  color: var(--navy-line);
+  font-size: 14px;
+  flex: 1;
+}
+
+.segment-card .btn {
+  margin-top: 12px;
+  padding: 12px 36px;
+}
+
+.new-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  margin-top: 32px;
+  padding: 22px 30px;
+  border: 1px solid #99f6e4;
+  border-radius: var(--radius);
+  background: #fff;
+}
+
+.new-banner h3 {
+  font-size: 17px;
+}
+
+.new-banner p {
+  max-width: 660px;
+  color: var(--navy-line);
+  font-size: 14px;
+}
+
+.new-banner-actions {
+  display: flex;
+  gap: 16px;
+  flex-shrink: 0;
+}
+
