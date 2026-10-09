@@ -181,5 +181,17 @@ const en ={
     "youtube": "Can't play the video? Watch it on YouTube →",
     "soon": "The team video will be published soon on the DoofPlus YouTube channel.",
     "unavailable": "The video is not available right now. You can watch it on the DoofPlus YouTube channel."
+  },
+  testimonials: {
+    "overline": "Testimonials",
+    "title": "What our clients think",
+    "t1_text": "“DoofPlus cut our DIGEMID evaluation preparation from three weeks to a couple of days. The tamper-proof logs and e-signatures are exactly what we were missing.”",
+    "t1_role": "QA Director",
+    "t2_text": "“Linking our machinery through IoT was surprisingly simple. Anomalies that used to go unnoticed for hours are now alerted instantly.”",
+    "t2_role": "Production Manager",
+    "t3_text": "“We passed our last DIGEMID assessment without a single data-integrity observation. Operational tracking is reliable and easy to show.”",
+    "t3_role": "Laboratory Supervisor",
+    "rating5": "Rated 5 out of 5",
+    "rating4": "Rated 4 out of 5"
   }
 }

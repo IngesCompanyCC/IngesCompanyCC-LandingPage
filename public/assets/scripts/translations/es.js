@@ -180,5 +180,17 @@ const es ={
     "youtube": "¿No se reproduce el video? Míralo en YouTube →",
     "soon": "El video del equipo se publicará pronto en el canal de YouTube de DoofPlus.",
     "unavailable": "El video no está disponible en este momento. Puedes verlo en el canal de YouTube de DoofPlus."
+  },
+  testimonials: {
+    "overline": "Testimonios",
+    "title": "Lo que opinan nuestros clientes",
+    "t1_text": "“DoofPlus redujo la preparación de nuestra evaluación de DIGEMID de tres semanas a un par de días. Los registros inalterables y las firmas electrónicas son justo lo que nos faltaba.”",
+    "t1_role": "Directora de QA",
+    "t2_text": "“Conectar nuestra maquinaria mediante IoT fue sorprendentemente simple. Las anomalías que antes pasaban horas sin notarse ahora se alertan al instante.”",
+    "t2_role": "Jefe de Producción",
+    "t3_text": "“Aprobamos nuestra última evaluación de DIGEMID sin una sola observación de integridad de datos. El seguimiento operativo es confiable y fácil de demostrar.”",
+    "t3_role": "Supervisora de Laboratorio",
+    "rating5": "Calificación de 5 sobre 5",
+    "rating4": "Calificación de 4 sobre 5"
   }
 }

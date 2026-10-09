@@ -1172,3 +1172,58 @@ h1 {
 @media (max-width: 900px) {
   .team-grid > :nth-child(n) { grid-column: span 12; }
 }
+
+/* ---------- Testimonials ---------- */
+:root {
+  --amber: #f59e0b;
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(var(--grid-columns), minmax(0, 1fr));
+  column-gap: var(--grid-gutter);
+  row-gap: var(--grid-row-gap);
+  margin-top: 40px;
+}
+
+.grid-3 > * { grid-column: span 4; }
+.testimonial {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 22px 22px 26px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--gray-bg);
+}
+
+.stars {
+  color: var(--amber);
+  letter-spacing: 2px;
+}
+
+/* On a gray section the cards turn white so they stay visible. */
+.section-gray .testimonial {
+  background: #fff;
+}
+
+.testimonial blockquote {
+  flex: 1;
+  margin: 10px 0 28px;
+  color: var(--navy-line);
+  font-size: 14px;
+}
+
+.testimonial figcaption strong {
+  display: block;
+  font-size: 14px;
+}
+
+.testimonial figcaption span {
+  color: var(--muted);
+  font-size: 12px;
+}
+
+@media (max-width: 900px) {
+  .grid-3 > :nth-child(n) { grid-column: span 12; }
+}
