@@ -235,5 +235,24 @@ const es ={
     "success_title": "Consulta enviada",
     "success_text": "Gracias, {name}. Nuestro equipo te responderá a <strong>{email}</strong> en un plazo de dos días hábiles.",
     "again": "Enviar otra consulta"
+  },
+  footer: {
+    "tagline": "Gestión de calidad farmacéutica con IoT y cumplimiento regulatorio.",
+    "product": "Producto",
+    "features": "Funcionalidades",
+    "pricing": "Planes y precios",
+    "how": "Cómo funciona",
+    "company": "Empresa",
+    "about": "Nosotros",
+    "team": "Nuestro equipo",
+    "faq": "Preguntas frecuentes",
+    "contact": "Contacto",
+    "location": "Lima, Perú",
+    "legal": "Legal",
+    "terms": "Términos de Servicio",
+    "privacy": "Política de Privacidad",
+    "copyright": "Copyright © 2026 IngesCompanyCC. Todos los derechos reservados.",
+    "qa_access": "Acceso QA/QC",
+    "prod_access": "Acceso Producción"
   }
 }
