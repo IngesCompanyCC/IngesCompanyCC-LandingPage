@@ -149,5 +149,18 @@ const en ={
     "enterprise_f4": "Advanced KPI analytics",
     "enterprise_cta": "Get Enterprise",
     "note": "Prices in US dollars; taxes not included. You can change or cancel your plan before the renewal date."
+  },
+  about: {
+    "overline": "About us",
+    "title": "DoofPlus: Transforming Pharmaceutical Quality Management with IoT and Regulatory Compliance",
+    "text": "DoofPlus is developed by IngesCompany, a startup that builds digital solutions for highly regulated industries. The platform centralizes the information of manufacturing and quality control processes, giving laboratories organized, reliable records that support compliance with Good Manufacturing Practices (GMP) and DIGEMID requirements.",
+    "tag1": "Traceability",
+    "tag2": "Data integrity",
+    "tag3": "Regulatory compliance",
+    "tag4": "Open technology",
+    "mission_title": "Our mission",
+    "mission_text": "Design open technological solutions that digitize and optimize pharmaceutical quality management, integrating operational and IoT data to strengthen traceability, regulatory compliance and process reliability.",
+    "vision_title": "Our vision",
+    "vision_text": "Become a reference in digital quality-assurance solutions for the Latin American pharmaceutical industry, enabling open technologies that improve traceability, data integrity and compliance management."
   }
 }

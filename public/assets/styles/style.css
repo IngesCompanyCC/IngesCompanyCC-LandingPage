@@ -1016,3 +1016,70 @@ h1 {
   .plans-head { flex-direction: column; align-items: flex-start; }
   .plan-features { grid-template-columns: 1fr; }
 }
+
+/* ---------- About ---------- */
+
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(var(--grid-columns), minmax(0, 1fr));
+  column-gap: var(--grid-gutter);
+  row-gap: var(--grid-row-gap);
+}
+
+.about-grid > * { grid-column: span 6; }
+
+.about-grid h2 {
+  color: var(--text);
+}
+
+.about-text {
+  margin-top: 56px;
+  color: var(--navy-line);
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 28px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.tags li {
+  padding: 4px 14px;
+  border: 1px solid #99f6e4;
+  border-radius: var(--radius-pill);
+  background: #fff;
+  color: var(--teal);
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.about-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.info-card {
+  padding: 26px 22px 40px;
+  border: 1px solid #99f6e4;
+  border-radius: var(--radius);
+  background: #fff;
+}
+
+.info-card h3 {
+  font-size: 15px;
+}
+
+.info-card p {
+  margin-top: 4px;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+@media (max-width: 900px) {
+  .about-grid > :nth-child(n) { grid-column: span 12; }
+  .about-text { margin-top: 24px; }
+}
