@@ -161,5 +161,24 @@ const es ={
     "mission_text": "Diseñar soluciones tecnológicas abiertas que digitalicen y optimicen la gestión de calidad farmacéutica, integrando datos operativos e IoT para fortalecer la trazabilidad, el cumplimiento regulatorio y la confiabilidad de los procesos.",
     "vision_title": "Nuestra visión",
     "vision_text": "Ser un referente en soluciones digitales de aseguramiento de la calidad para la industria farmacéutica latinoamericana, impulsando tecnologías abiertas que mejoren la trazabilidad, la integridad de datos y la gestión del cumplimiento."
+  },
+  team: {
+    "overline": "Nuestro equipo",
+    "title": "Las personas detrás de DoofPlus",
+    "subtitle": "Estudiantes de Ingeniería de Software de la UPC que diseñan, construyen y validan DoofPlus.",
+    "role": "Ingeniero de Software",
+    "role_female": "Ingeniera de Software",
+    "marcelo": "Puntual y comunicativo; trabaja con C++ y Python y disfruta resolver problemas en equipo.",
+    "yhoshua": "Curioso por la tecnología y tranquilo bajo presión; sigue las últimas tendencias del software.",
+    "cristina": "Responsable, organizada y comprometida; con conocimientos en programación, bases de datos y desarrollo de proyectos.",
+    "nestor": "Apasionado por el desarrollo de aplicaciones, las bases de datos y las metodologías ágiles.",
+    "rodolfo": "Puntual y responsable; atraído por la programación desde sus primeros cursos escolares.",
+    "video_title": "Conoce al equipo",
+    "video_text": "Un video corto en el que los integrantes de IngesCompanyCC se presentan y cuentan cómo construyen DoofPlus.",
+    "player_title": "DoofPlus · About the Team",
+    "play": "Reproducir el video del equipo",
+    "youtube": "¿No se reproduce el video? Míralo en YouTube →",
+    "soon": "El video del equipo se publicará pronto en el canal de YouTube de DoofPlus.",
+    "unavailable": "El video no está disponible en este momento. Puedes verlo en el canal de YouTube de DoofPlus."
   }
 }
