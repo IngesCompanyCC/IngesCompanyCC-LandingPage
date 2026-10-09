@@ -36,5 +36,19 @@ const en ={
       "new_text": "The laboratory administrator registers the organization and then invites the team. Have a question first? Write to our team.",
       "register": "Register your laboratory",
       "contact": "Contact us"
+  },
+  services: {
+    "overline": "What we offer",
+    "title": "Our services",
+    "subtitle": "Four services that cover the life cycle of a pharmaceutical batch, from the production line to the regulatory audit.",
+    "iot_title": "Real-Time IoT Monitoring",
+    "iot_text": "Sensors connected through ThingsBoard capture temperature, humidity and pressure of each piece of equipment and link them to the batch in production.",
+    "gmp_title": "Automated BPM Compliance",
+    "gmp_text": "Controlled documents, approval workflows and GMP checks applied to every record, ready for DIGEMID inspections.",
+    "trace_title": "Immutable Traceability",
+    "trace_text": "An attributed audit trail connects raw materials, operations, analytical results and finished goods.",
+    "batch_title": "Digital Batch Management",
+    "batch_text": "Production orders, master formulas and electronic batch records from issuance to QA release.",
+    "learn_more": "Learn more →"
   }
 }

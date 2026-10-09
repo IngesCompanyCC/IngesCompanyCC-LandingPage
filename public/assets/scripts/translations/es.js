@@ -35,5 +35,19 @@ const es ={
       "new_text": "El administrador del laboratorio registra la organización y luego invita al equipo. ¿Tienes alguna duda antes? Escribe a nuestro equipo.",
       "register": "Registra tu laboratorio",
       "contact": "Contáctanos"
+  },
+  services: {
+    "overline": "Lo que ofrecemos",
+    "title": "Nuestros servicios",
+    "subtitle": "Cuatro servicios que cubren el ciclo de vida de un lote farmacéutico, desde la línea de producción hasta la auditoría regulatoria.",
+    "iot_title": "Monitoreo IoT en tiempo real",
+    "iot_text": "Sensores conectados mediante ThingsBoard capturan la temperatura, humedad y presión de cada equipo y las vinculan al lote en producción.",
+    "gmp_title": "Cumplimiento BPM automatizado",
+    "gmp_text": "Documentos controlados, flujos de aprobación y verificaciones BPM aplicadas a cada registro, listos para las inspecciones de DIGEMID.",
+    "trace_title": "Trazabilidad inalterable",
+    "trace_text": "Un audit trail con autoría conecta materias primas, operaciones, resultados analíticos y producto terminado.",
+    "batch_title": "Gestión digital de lotes",
+    "batch_text": "Órdenes de producción, fórmulas maestras y registros electrónicos de lote desde su emisión hasta la liberación por QA.",
+    "learn_more": "Saber más →"
   }
 }
