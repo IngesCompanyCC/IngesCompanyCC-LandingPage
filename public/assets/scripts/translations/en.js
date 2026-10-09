@@ -107,5 +107,18 @@ const en ={
     "play": "Play video",
     "soon": "The video will be published soon on the DoofPlus YouTube channel.",
     "unavailable": "The video is not available right now. You can watch it on the DoofPlus YouTube channel."
+  },
+  benefits: {
+    "overline": "Benefits",
+    "title": "Why laboratories choose DoofPlus",
+    "subtitle": "Results aligned with the goals defined with QA/QC specialists and production supervisors.",
+    "b1_title": "Reduction in audit preparation",
+    "b1_text": "Inspection-ready evidence and reports are generated from attributed records in seconds, not weeks.",
+    "b2_title": "Human errors in records",
+    "b2_text": "Critical variables (temperature, pressure, pH) are captured by IoT sensors, not copied by hand.",
+    "b3_title": "To detect a deviation",
+    "b3_text": "Out-of-limit readings trigger blocking alerts linked to the affected batch.",
+    "b4_title": "In servers or infrastructure",
+    "b4_text": "A cloud SaaS platform with monthly or annual subscription that scales with your laboratory."
   }
 }

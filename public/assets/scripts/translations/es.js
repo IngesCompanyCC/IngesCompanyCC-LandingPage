@@ -106,5 +106,18 @@ const es ={
     "play": "Reproducir video",
     "soon": "El video se publicará pronto en el canal de YouTube de DoofPlus.",
     "unavailable": "El video no está disponible en este momento. Puedes verlo en el canal de YouTube de DoofPlus."
+  },
+  benefits: {
+    "overline": "Beneficios",
+    "title": "Por qué los laboratorios eligen DoofPlus",
+    "subtitle": "Resultados alineados con las metas definidas junto a especialistas QA/QC y supervisores de producción.",
+    "b1_title": "Menos tiempo preparando auditorías",
+    "b1_text": "La evidencia y los reportes listos para inspección se generan desde registros con autoría en segundos, no en semanas.",
+    "b2_title": "Errores humanos en los registros",
+    "b2_text": "Las variables críticas (temperatura, presión, pH) las capturan sensores IoT, no se copian a mano.",
+    "b3_title": "Para detectar una desviación",
+    "b3_text": "Las lecturas fuera de límite disparan alertas bloqueantes vinculadas al lote afectado.",
+    "b4_title": "En servidores o infraestructura",
+    "b4_text": "Una plataforma SaaS en la nube con suscripción mensual o anual que crece con tu laboratorio."
   }
 }
