@@ -13,7 +13,7 @@ Built with HTML5, CSS3 and JavaScript, bilingual (English by default and Latin A
 
 - Marcelo Angulo
 - Yhoshua Cobades
-- Cristina Flores
+- Cristina Yarleque
 - Nestor Rojas
 - Rodolfo Zavaleta
 
