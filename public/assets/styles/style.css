@@ -324,3 +324,47 @@ h1 {
   .new-banner-actions { display: flex; flex-direction: column; }
 }
 
+
+/* ---------- Workspace Colors Fix ---------- */
+:root {
+  --navy: #0f172a;
+  --navy-line: #334155;
+  --teal: #0f766e;
+  --mint: #f0fdfa;
+  --radius: 14px;
+  --radius-pill: 999px;
+  --shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+  --text: #0f172a;
+}
+
+.section-mint {
+  color: var(--text);
+}
+
+.section-mint h2, 
+.section-mint .overline, 
+.segment-card h3, 
+.new-banner h3 {
+  color: var(--text);
+}
+
+.section-mint .section-subtitle, 
+.segment-card p, 
+.new-banner p {
+  color: var(--navy-line);
+}
+
+.segment-card .btn,
+.new-banner .btn {
+  background-color: var(--teal);
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+}
+
+.new-banner .btn-outline {
+  background-color: transparent;
+  color: var(--teal);
+  border: 1px solid var(--teal);
+}
