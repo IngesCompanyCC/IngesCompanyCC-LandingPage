@@ -37,13 +37,17 @@ document.querySelectorAll('.lang-btn').forEach(btn => {
   btn.addEventListener('click', (e) => {
     currentLang = e.target.getAttribute('data-lang');
     updateTexts();
+    updateBilling();
   });
 });
 
 /**
  * Initializes the text content of elements with the data-i18n attribute when the DOM is fully loaded.
  */
-document.addEventListener('DOMContentLoaded', updateTexts);
+document.addEventListener('DOMContentLoaded', () => {
+  updateTexts();
+  updateBilling();
+});
 
 /**
  * Opens one item of an accordion and closes the others.
@@ -136,5 +140,39 @@ document.querySelectorAll('[data-video]').forEach(player => {
     frame.addEventListener('error', () => showMessage(`${name}.unavailable`));
     player.appendChild(frame);
     play.hidden = true;
+  });
+});
+
+let billing = 'monthly';
+
+/**
+ * Updates the prices, periods and notes of the Plans section for the selected billing.
+ * Prices come from data-price-monthly / data-price-annual and notes from translation keys.
+ */
+function updateBilling() {
+  const monthly = billing === 'monthly';
+  document.querySelectorAll('[data-billing]').forEach(button => {
+    const active = button.dataset.billing === billing;
+    button.classList.toggle('active', active);
+    button.setAttribute('aria-pressed', String(active));
+  });
+  document.querySelectorAll('[data-price-monthly]').forEach(price => {
+    price.textContent = monthly ? price.dataset.priceMonthly : price.dataset.priceAnnual;
+  });
+  document.querySelectorAll('[data-period]').forEach(period => {
+    period.textContent = translate(monthly ? 'plans.per_month' : 'plans.per_year');
+  });
+  document.querySelectorAll('[data-note-monthly]').forEach(note => {
+    note.textContent = translate(monthly ? note.dataset.noteMonthly : note.dataset.noteAnnual);
+  });
+}
+
+/**
+ * Adds click event listeners to the monthly / annual toggle of the Plans section.
+ */
+document.querySelectorAll('[data-billing]').forEach(button => {
+  button.addEventListener('click', () => {
+    billing = button.dataset.billing;
+    updateBilling();
   });
 });
