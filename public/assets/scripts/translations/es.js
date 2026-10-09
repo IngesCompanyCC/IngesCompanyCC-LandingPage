@@ -92,5 +92,19 @@ const es ={
     "s_up": "↑ 12% vs. septiembre",
     "s_watch": "En revisión",
     "s_target": "Sobre la meta"
+  },
+  product: {
+    "overline": "Sobre el producto",
+    "title": "Mira DoofPlus en acción",
+    "subtitle": "Un video de tres minutos sobre cómo DoofPlus conecta la línea de producción con el equipo de calidad, desde la alerta IoT hasta la decisión de liberación por QA.",
+    "ch1": "Por qué DoofPlus",
+    "ch2": "De la materia prima al registro de lote",
+    "ch3": "De la alerta IoT a la CAPA",
+    "ch4": "Liberación QA con firma electrónica",
+    "youtube": "¿No se reproduce el video? Míralo en YouTube →",
+    "player_title": "DoofPlus · About the Product",
+    "play": "Reproducir video",
+    "soon": "El video se publicará pronto en el canal de YouTube de DoofPlus.",
+    "unavailable": "El video no está disponible en este momento. Puedes verlo en el canal de YouTube de DoofPlus."
   }
 }

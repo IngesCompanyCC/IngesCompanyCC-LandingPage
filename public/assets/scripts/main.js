@@ -81,3 +81,60 @@ document.querySelectorAll('[data-feature]').forEach(link => {
     openAccordionItem(document.querySelector('[data-accordion="features"]'), Number(link.dataset.feature));
   });
 });
+
+/**
+ * Embed URLs of the videos (e.g. https://www.youtube.com/embed/<id>).
+ * Paste each URL when the video is published on YouTube.
+ */
+const VIDEO_URLS = {
+  product: '',
+  team: ''
+};
+
+/**
+ * Returns the text of a dotted translation key in the current language.
+ * @param {string} key - The translation key, e.g. "product.soon".
+ */
+function translate(key) {
+  return key.split('.').reduce((text, part) => (text ? text[part] : undefined), translations[currentLang]) || '';
+}
+
+/**
+ * Initializes the video players. Each player loads its YouTube embed only when
+ * the visitor presses play. If the video is not published or cannot be loaded,
+ * a message explains where to watch it.
+ */
+document.querySelectorAll('[data-video]').forEach(player => {
+  const name = player.dataset.video;
+  const url = VIDEO_URLS[name];
+  const play = player.querySelector('[data-video-play]');
+  const link = document.querySelector(`[data-video-link="${name}"]`);
+  const message = document.querySelector(`[data-video-soon="${name}"]`);
+  if (!play) return;
+
+  const showMessage = key => {
+    if (!message) return;
+    message.setAttribute('data-i18n', key);
+    message.innerHTML = translate(key);
+    message.hidden = false;
+  };
+
+  if (!url) {
+    if (link) link.hidden = true;
+    play.addEventListener('click', () => showMessage(`${name}.soon`));
+    return;
+  }
+
+  if (link) link.href = url.replace('/embed/', '/watch?v=');
+
+  play.addEventListener('click', () => {
+    const frame = document.createElement('iframe');
+    frame.src = `${url}?autoplay=1`;
+    frame.title = translate(`${name}.player_title`);
+    frame.allow = 'autoplay; encrypted-media; picture-in-picture';
+    frame.allowFullscreen = true;
+    frame.addEventListener('error', () => showMessage(`${name}.unavailable`));
+    player.appendChild(frame);
+    play.hidden = true;
+  });
+});
