@@ -192,5 +192,22 @@ const es ={
     "t3_role": "Supervisora de Laboratorio",
     "rating5": "Calificación de 5 sobre 5",
     "rating4": "Calificación de 4 sobre 5"
+  },
+  faq: {
+    "overline": "Preguntas frecuentes",
+    "title": "Preguntas frecuentes",
+    "subtitle": "Selecciona una pregunta para ver su respuesta.",
+    "q1": "¿QA/QC y Producción pueden trabajar en vistas separadas?",
+    "a1": "Sí. Cada segmento ingresa a su propio entorno de la Web Application, con los módulos y aprobaciones de su rol y enlaces a los registros que está autorizado a ver.",
+    "q2": "¿DoofPlus certifica automáticamente el cumplimiento de las BPM?",
+    "a2": "No. DoofPlus apoya el cumplimiento de las BPM y de los requisitos de DIGEMID mediante procesos controlados, firmas electrónicas y un audit trail inalterable, pero la validación de los sistemas computarizados y el cumplimiento final son responsabilidad de cada laboratorio.",
+    "q3": "¿Qué sensores puedo conectar?",
+    "a3": "Cualquier dispositivo que envíe telemetría a ThingsBoard por MQTT o HTTP: sensores de temperatura, humedad, presión diferencial y pH, entre otros. Cada dispositivo se registra y se asocia a su equipo en DoofPlus.",
+    "q4": "¿Puedo cambiar o cancelar mi plan?",
+    "a4": "Sí. El administrador del laboratorio puede pasar de Standard Lab a Enterprise, o al revés, o cancelar antes de la fecha de renovación. El pago anual ahorra el equivalente a dos meses.",
+    "q5": "¿Cómo se protege mi información?",
+    "a5": "Los datos se cifran en tránsito, el acceso es por roles con autenticación de dos factores en los pasos críticos y cada cambio queda registrado en el audit trail. Los datos personales se tratan según la Ley de Protección de Datos Personales del Perú (Ley N.° 29733).",
+    "more": "¿No encontraste tu respuesta?",
+    "contact": "Contacta al equipo de DoofPlus →"
   }
 }
