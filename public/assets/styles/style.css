@@ -368,3 +368,41 @@ h1 {
   color: var(--teal);
   border: 1px solid var(--teal);
 }
+
+/* ---------- Workspace Missing Layout & Grid ---------- */
+:root {
+  --grid-columns: 12;
+  --grid-gutter: 32px;
+  --grid-row-gap: 24px;
+  --container: 1200px;
+  --muted: #64748b;
+}
+
+.container {
+  width: 100%;
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.section {
+  padding: 96px 0;
+}
+
+.section h2 {
+  font-size: 32px;
+}
+
+.section-subtitle {
+  max-width: 720px;
+  margin-top: 18px;
+  font-size: 17px;
+  margin-bottom: 48px;
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(var(--grid-columns), minmax(0, 1fr));
+  column-gap: var(--grid-gutter);
+  row-gap: var(--grid-row-gap);
+}
