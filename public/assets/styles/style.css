@@ -28,9 +28,17 @@ body {
 }
 
 .logo {
-  color: var(--teal-primary);
-  font-size: 24px;
-  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+}
+
+.logo-img {
+  height: 36px;
+  width: auto;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 .nav-links {

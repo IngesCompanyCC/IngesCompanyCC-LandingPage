@@ -1,9 +1,10 @@
 const en ={
   nav: {
-    platform: "Platform",
-    role: "By role",
-    security: "Security",
-    resources: "Resources",
+    home: "Home",
+    features: "Features",
+    benefits: "Benefits",
+    plans: "Plans",
+    about: "About Us",
     qa_access: "QA/QC Access",
     prod_access: "Production Access"
   },
