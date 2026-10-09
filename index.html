@@ -11,12 +11,13 @@
 <body>
 <!-- Header section with navigation and language switcher -->
 <header class="navbar">
-  <div class="logo">DoofPlus</div>
-  <nav class="nav-links">
-    <a href="#" data-i18n="nav.platform"></a>
-    <a href="#" data-i18n="nav.role"></a>
-    <a href="#" data-i18n="nav.security"></a>
-    <a href="#" data-i18n="nav.resources"></a>
+  <a href="#home" class="logo"><img src="public/assets/images/doofplus-logo.png" alt="DoofPlus" class="logo-img"></a>
+  <nav class="nav-links" aria-label="Main">
+    <a href="#home" data-i18n="nav.home">Home</a>
+    <a href="#features" data-i18n="nav.features">Features</a>
+    <a href="#benefits" data-i18n="nav.benefits">Benefits</a>
+    <a href="#plans" data-i18n="nav.plans">Plans</a>
+    <a href="#about" data-i18n="nav.about">About Us</a>
   </nav>
   <div class="nav-actions">
     <div class="lang-switch">
@@ -30,7 +31,7 @@
 </header>
 
 <main>
-  <section class="hero">
+  <section class="hero" id="home">
     <div class="hero-content">
       <span class="overline" data-i18n="hero.overline"></span>
 
