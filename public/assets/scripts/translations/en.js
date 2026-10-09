@@ -93,5 +93,19 @@ const en ={
     "s_up": "↑ 12% vs. September",
     "s_watch": "Under review",
     "s_target": "Above target"
+  },
+  product: {
+    "overline": "About the product",
+    "title": "See DoofPlus in action",
+    "subtitle": "A three-minute video about how DoofPlus connects the production line with the quality team, from the IoT alert to the QA release decision.",
+    "ch1": "Why DoofPlus",
+    "ch2": "From raw material to batch record",
+    "ch3": "From IoT alert to CAPA",
+    "ch4": "QA release with electronic signature",
+    "youtube": "Can't play the video? Watch it on YouTube →",
+    "player_title": "DoofPlus · About the Product",
+    "play": "Play video",
+    "soon": "The video will be published soon on the DoofPlus YouTube channel.",
+    "unavailable": "The video is not available right now. You can watch it on the DoofPlus YouTube channel."
   }
 }
