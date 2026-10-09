@@ -1227,3 +1227,22 @@ h1 {
 @media (max-width: 900px) {
   .grid-3 > :nth-child(n) { grid-column: span 12; }
 }
+
+/* ---------- FAQ ---------- */
+#faq {
+  background: #fff;
+  color: var(--text);
+}
+
+#faq .section-subtitle {
+  color: var(--muted);
+}
+  display: block;
+}
+
+#faq .accordion {
+  margin-top: 40px;
+}
+
+.faq-more {
+  margin-top: 24px;

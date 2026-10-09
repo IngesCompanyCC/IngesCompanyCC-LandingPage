@@ -193,5 +193,22 @@ const en ={
     "t3_role": "Laboratory Supervisor",
     "rating5": "Rated 5 out of 5",
     "rating4": "Rated 4 out of 5"
+  },
+  faq: {
+    "overline": "FAQ",
+    "title": "Frequently asked questions",
+    "subtitle": "Select a question to see its answer.",
+    "q1": "Can QA/QC and Production work in separate views?",
+    "a1": "Yes. Each segment enters its own environment of the Web Application, with the modules and approvals of its role and links to the records it is authorized to see.",
+    "q2": "Does DoofPlus certify GMP compliance automatically?",
+    "a2": "No. DoofPlus supports compliance with GMP and DIGEMID requirements through controlled processes, electronic signatures and an immutable audit trail, but the validation of computerized systems and the final compliance remain the responsibility of each laboratory.",
+    "q3": "Which sensors can I connect?",
+    "a3": "Any device that sends telemetry to ThingsBoard over MQTT or HTTP: temperature, humidity, differential pressure and pH sensors, among others. Each device is registered and associated with its equipment in DoofPlus.",
+    "q4": "Can I change or cancel my plan?",
+    "a4": "Yes. The laboratory administrator can switch between Standard Lab and Enterprise, or cancel before the renewal date. Annual billing saves the equivalent of two months.",
+    "q5": "How is my information protected?",
+    "a5": "Data is encrypted in transit, access is role-based with two-factor authentication at critical steps, and every change is recorded in the audit trail. Personal data is processed under Peru's Personal Data Protection Law (Law N.° 29733).",
+    "more": "Didn't find your answer?",
+    "contact": "Contact the DoofPlus team →"
   }
 }
