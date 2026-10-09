@@ -296,3 +296,31 @@ h1 {
   flex-shrink: 0;
 }
 
+
+
+/* ---------- Workspace Layout & Utilities ---------- */
+.section-mint {
+  background: var(--mint);
+}
+
+.pill {
+  display: inline-block;
+  padding: 2px 12px;
+  border: 1px solid var(--teal);
+  border-radius: var(--radius-pill);
+  color: var(--teal);
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.grid-2 > * { grid-column: span 6; }
+
+@media (max-width: 1080px) {
+  .grid-2 > :nth-child(n) { grid-column: span 12; }
+}
+
+@media (max-width: 900px) {
+  .new-banner { flex-direction: column; align-items: stretch; text-align: center; }
+  .new-banner-actions { display: flex; flex-direction: column; }
+}
+
