@@ -209,5 +209,31 @@ const es ={
     "a5": "Los datos se cifran en tránsito, el acceso es por roles con autenticación de dos factores en los pasos críticos y cada cambio queda registrado en el audit trail. Los datos personales se tratan según la Ley de Protección de Datos Personales del Perú (Ley N.° 29733).",
     "more": "¿No encontraste tu respuesta?",
     "contact": "Contacta al equipo de DoofPlus →"
+  },
+  contact: {
+    "overline": "Contacto",
+    "title": "¿Listo para digitalizar la gestión de calidad de tu laboratorio?",
+    "text": "Envíanos tu consulta sobre la plataforma o los planes y nuestro equipo te responderá en un plazo de dos días hábiles.",
+    "info": "doofplus.inges@gmail.com · Lima, Perú"
+  },
+  form: {
+    "name": "Nombre completo",
+    "name_ph": "p. ej. María Pérez",
+    "email": "Correo de trabajo",
+    "email_ph": "nombre@laboratorio.com.pe",
+    "lab": "Nombre del laboratorio",
+    "optional": "(opcional)",
+    "lab_ph": "p. ej. Laboratorios Andinos S.A.C.",
+    "message": "Tu consulta",
+    "message_ph": "Cuéntanos qué te gustaría saber sobre DoofPlus.",
+    "submit": "Enviar consulta",
+    "disclaimer": "Al enviar aceptas nuestra Política de Privacidad. Respondemos en un plazo de dos días hábiles.",
+    "error_banner": "Tu consulta no se envió. Revisa los campos resaltados.",
+    "error_name": "Ingresa tu nombre.",
+    "error_email": "Ingresa un correo válido, p. ej. nombre@laboratorio.com.pe.",
+    "error_message": "Escribe tu consulta.",
+    "success_title": "Consulta enviada",
+    "success_text": "Gracias, {name}. Nuestro equipo te responderá a <strong>{email}</strong> en un plazo de dos días hábiles.",
+    "again": "Enviar otra consulta"
   }
 }

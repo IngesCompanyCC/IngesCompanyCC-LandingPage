@@ -404,6 +404,47 @@
       <p class="faq-more"><strong data-i18n="faq.more"></strong> <a href="#contact" class="link-teal" data-i18n="faq.contact"></a></p>
     </div>
   </section>
+  <!-- Contact: inquiry form (US04) -->
+  <section class="section section-teal" id="contact">
+    <div class="container contact-grid">
+      <div class="contact-intro">
+        <span class="overline overline-light" data-i18n="contact.overline">Contact</span>
+        <h2 data-i18n="contact.title"></h2>
+        <p class="contact-text" data-i18n="contact.text"></p>
+      </div>
+      <form class="form-card contact-form" novalidate>
+        <div class="form-error" hidden data-i18n="form.error_banner"></div>
+        <label class="field">
+          <span><span data-i18n="form.name">Full name</span> *</span>
+          <input type="text" name="name" autocomplete="name" required data-i18n-placeholder="form.name_ph">
+          <small class="field-error" hidden data-i18n="form.error_name"></small>
+        </label>
+        <label class="field">
+          <span><span data-i18n="form.email">Work email</span> *</span>
+          <input type="email" name="email" autocomplete="email" required data-i18n-placeholder="form.email_ph">
+          <small class="field-error" hidden data-i18n="form.error_email"></small>
+        </label>
+        <label class="field">
+          <span><span data-i18n="form.lab">Laboratory name</span> <em data-i18n="form.optional">(optional)</em></span>
+          <input type="text" name="lab" autocomplete="organization" data-i18n-placeholder="form.lab_ph">
+        </label>
+        <label class="field">
+          <span><span data-i18n="form.message">Your inquiry</span> *</span>
+          <textarea name="message" rows="4" required data-i18n-placeholder="form.message_ph"></textarea>
+          <small class="field-error" hidden data-i18n="form.error_message"></small>
+        </label>
+        <button type="submit" data-magnetic class="btn btn-primary btn-block" data-i18n="form.submit">Send inquiry</button>
+        <p class="form-note" data-i18n="form.disclaimer"></p>
+      </form>
+      <div class="form-card form-success" hidden tabindex="-1" data-contact-success>
+        <span class="success-icon" aria-hidden="true">✓</span>
+        <h3 data-i18n="form.success_title">Inquiry sent</h3>
+        <p class="success-text"></p>
+        <button type="button" class="btn btn-outline" data-contact-again data-i18n="form.again">Send another inquiry</button>
+      </div>
+      <p class="contact-info" data-i18n="contact.info"></p>
+    </div>
+  </section>
 </main>
 
 <script src="public/assets/scripts/translations/en.js"></script>

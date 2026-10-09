@@ -17,6 +17,10 @@ function updateTexts() {
     element.innerHTML = text;
   });
 
+  document.querySelectorAll('[data-i18n-placeholder]').forEach(element => {
+    element.placeholder = translate(element.getAttribute('data-i18n-placeholder'));
+  });
+
   /**
    * Updates the active state of language buttons based on the current language.
    * It removes the 'active' class from all buttons and adds it to the button corresponding to the current language.
@@ -38,6 +42,7 @@ document.querySelectorAll('.lang-btn').forEach(btn => {
     currentLang = e.target.getAttribute('data-lang');
     updateTexts();
     updateBilling();
+    renderContactConfirmation();
   });
 });
 
@@ -98,9 +103,22 @@ const VIDEO_URLS = {
 /**
  * Returns the text of a dotted translation key in the current language.
  * @param {string} key - The translation key, e.g. "product.soon".
+ * @param {Object} [vars] - Values that replace {name} placeholders; they are HTML-escaped.
  */
-function translate(key) {
-  return key.split('.').reduce((text, part) => (text ? text[part] : undefined), translations[currentLang]) || '';
+function translate(key, vars = {}) {
+  let text = key.split('.').reduce((value, part) => (value ? value[part] : undefined), translations[currentLang]) || '';
+  Object.entries(vars).forEach(([name, value]) => {
+    text = text.replace(`{${name}}`, escapeHtml(value));
+  });
+  return text;
+}
+
+/**
+ * Escapes the HTML special characters of a value typed by the visitor.
+ * @param {string} value - The value to escape.
+ */
+function escapeHtml(value) {
+  return String(value).replace(/[&<>"']/g, char => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[char]));
 }
 
 /**
@@ -176,3 +194,71 @@ document.querySelectorAll('[data-billing]').forEach(button => {
     updateBilling();
   });
 });
+
+const EMAIL_PATTERN = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
+const contactForm = document.querySelector('.contact-form');
+const contactSuccess = document.querySelector('[data-contact-success]');
+let sentInquiry = null;
+
+/**
+ * Marks a field of the contact form as valid or invalid and shows its error.
+ * @param {HTMLElement} input - The input or textarea of the field.
+ * @param {boolean} invalid - Whether the field is invalid.
+ */
+function setInvalid(input, invalid) {
+  input.closest('.field').classList.toggle('invalid', invalid);
+  input.setAttribute('aria-invalid', String(invalid));
+  input.closest('.field').querySelector('.field-error').hidden = !invalid;
+}
+
+/**
+ * Fills the confirmation text of the contact form in the current language.
+ */
+function renderContactConfirmation() {
+  if (!sentInquiry || !contactSuccess) return;
+  contactSuccess.querySelector('.success-text').innerHTML = translate('form.success_text', sentInquiry);
+}
+
+/**
+ * Contact inquiry form: the visitor sends a question to the DoofPlus team.
+ * A valid inquiry replaces the form with a confirmation in the current language.
+ */
+if (contactForm && contactSuccess) {
+  const fields = {
+    name: { input: contactForm.elements.name, isValid: value => value.trim().length > 0 },
+    email: { input: contactForm.elements.email, isValid: value => EMAIL_PATTERN.test(value.trim()) },
+    message: { input: contactForm.elements.message, isValid: value => value.trim().length > 0 }
+  };
+  const banner = contactForm.querySelector('.form-error');
+
+  Object.values(fields).forEach(field => {
+    field.input.addEventListener('input', () => {
+      if (field.input.getAttribute('aria-invalid') === 'true' && field.isValid(field.input.value)) {
+        setInvalid(field.input, false);
+      }
+    });
+  });
+
+  contactForm.addEventListener('submit', event => {
+    event.preventDefault();
+
+    const invalid = Object.values(fields).filter(field => !field.isValid(field.input.value));
+    Object.values(fields).forEach(field => setInvalid(field.input, invalid.includes(field)));
+    banner.hidden = invalid.length === 0;
+    if (invalid.length) return invalid[0].input.focus();
+
+    sentInquiry = { name: contactForm.elements.name.value.trim(), email: contactForm.elements.email.value.trim() };
+    contactForm.hidden = true;
+    contactSuccess.hidden = false;
+    renderContactConfirmation();
+    contactSuccess.focus();
+  });
+
+  contactSuccess.querySelector('[data-contact-again]').addEventListener('click', () => {
+    contactForm.reset();
+    sentInquiry = null;
+    contactSuccess.hidden = true;
+    contactForm.hidden = false;
+    fields.name.input.focus();
+  });
+}
