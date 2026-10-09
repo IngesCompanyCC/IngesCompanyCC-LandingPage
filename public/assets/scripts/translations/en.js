@@ -210,5 +210,31 @@ const en ={
     "a5": "Data is encrypted in transit, access is role-based with two-factor authentication at critical steps, and every change is recorded in the audit trail. Personal data is processed under Peru's Personal Data Protection Law (Law N.° 29733).",
     "more": "Didn't find your answer?",
     "contact": "Contact the DoofPlus team →"
+  },
+  contact: {
+    "overline": "Contact",
+    "title": "Ready to digitize your laboratory's quality management?",
+    "text": "Send us your question about the platform or the plans and our team will reply within two business days.",
+    "info": "doofplus.inges@gmail.com · Lima, Perú"
+  },
+  form: {
+    "name": "Full name",
+    "name_ph": "e.g. María Pérez",
+    "email": "Work email",
+    "email_ph": "name@laboratory.com.pe",
+    "lab": "Laboratory name",
+    "optional": "(optional)",
+    "lab_ph": "e.g. Laboratorios Andinos S.A.C.",
+    "message": "Your inquiry",
+    "message_ph": "Tell us what you would like to know about DoofPlus.",
+    "submit": "Send inquiry",
+    "disclaimer": "By submitting you accept our Privacy Policy. We reply within two business days.",
+    "error_banner": "Your inquiry was not sent. Check the highlighted fields.",
+    "error_name": "Enter your name.",
+    "error_email": "Enter a valid email address, e.g. name@laboratory.com.pe.",
+    "error_message": "Write your inquiry.",
+    "success_title": "Inquiry sent",
+    "success_text": "Thank you, {name}. Our team will reply to <strong>{email}</strong> within two business days.",
+    "again": "Send another inquiry"
   }
 }

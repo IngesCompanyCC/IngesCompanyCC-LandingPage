@@ -17,6 +17,10 @@ function updateTexts() {
     element.innerHTML = text;
   });
 
+  document.querySelectorAll('[data-i18n-placeholder]').forEach(element => {
+    element.placeholder = translate(element.getAttribute('data-i18n-placeholder'));
+  });
+
   /**
    * Updates the active state of language buttons based on the current language.
    * It removes the 'active' class from all buttons and adds it to the button corresponding to the current language.
