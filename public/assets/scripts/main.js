@@ -1,4 +1,4 @@
-const translations = { en, es };
+﻿const translations = { en, es };
 let currentLang = 'en';
 
 /**
@@ -264,12 +264,12 @@ if (contactForm && contactSuccess) {
 }
 
 /** Base URL of the DoofPlus Web Application. Set it when the Web Application is deployed. */
-const WEB_APP_URL = '';
+const WEB_APP_URL = 'https://ingescompanycc-app.web.app'; // TODO: Replace with real Firebase URL
 
 /** Web Application routes opened by the segment access buttons. */
 const APP_ROUTES = {
-  qa: '/login?segment=qa',
-  production: '/login?segment=production',
+  qa: '/sign-in/qa',
+  production: '/sign-in/production',
   register: '/register'
 };
 
@@ -314,3 +314,4 @@ if (menuToggle && mobileMenu) {
     if (event.matches) setMenuOpen(false);
   });
 }
+
