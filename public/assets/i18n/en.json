@@ -1,53 +1,52 @@
-const en ={
-  meta: {
+{
+  "meta": {
     "home": "DoofPlus - Pharmaceutical Quality Management",
     "terms": "Terms of Service - DoofPlus",
     "privacy": "Privacy Policy - DoofPlus"
   },
-  nav: {
-    home: "Home",
-    features: "Features",
-    benefits: "Benefits",
-    plans: "Plans",
-    about: "About Us",
-    qa_access: "QA/QC Access",
-    prod_access: "Production Access",
-    back: "← Back to DoofPlus",
-    menu: "Open menu",
-    close: "Close menu",
-    skip: "Skip to main content"
+  "nav": {
+    "home": "Home",
+    "features": "Features",
+    "benefits": "Benefits",
+    "about": "About Us",
+    "plans": "Plans",
+    "sign_in": "Sign in",
+    "get_started": "Get Started",
+    "back": "← Back to DoofPlus",
+    "menu": "Open menu",
+    "skip": "Skip to main content",
+    "back_short": "← Back",
+    "close": "Close menu"
   },
-  hero: {
-    overline: "QUALITY · PRODUCTION · CONNECTED",
-    title: "Every batch.<br>Every decision.<br>One clear record.",
-    subtitle: "Bring quality documentation, manufacturing traceability and live equipment insight into one pharmaceutical workspace. Know what needs attention—and what happens next.",
-    btn_signin: "No account? Sign In",
-    btn_capabilities: "View capabilities",
-    footer: "Role-based access · Attributed records · Controlled approvals · 2FA at critical steps",
-    badge: "READY FOR RELEASE",
-    badge_text: "<strong>B-26038</strong> · Evidence complete · 6 of 6 prerequisites passed · Maya Chen",
-    image_alt: "Specialist operating equipment in a pharmaceutical clean room"
-  }
-
-,
-  workspace: {
-      "overline": "Get started",
-      "title": "Choose your workspace",
-      "subtitle": "Sign in to the environment of your segment in the Web Application. After sign-in, your role and plant determine the modules and approvals you can use.",
-      "qa_tag": "QA / QC",
-      "qa_title": "For QA/QC Specialists",
-      "qa_text": "Approve documents, review analytical results, manage deviations and CAPA, and release batches with an electronic signature.",
-      "qa_cta": "Sign in to the QA/QC environment →",
-      "prod_tag": "Production",
-      "prod_title": "For Production Supervisors",
-      "prod_text": "Create production orders, follow each batch in real time, receive raw materials and react to IoT alerts on the line.",
-      "prod_cta": "Sign in to the Production environment →",
-      "new_title": "New to DoofPlus?",
-      "new_text": "The laboratory administrator registers the organization and then invites the team. Have a question first? Write to our team.",
-      "register": "Register your laboratory",
-      "contact": "Contact us"
+  "hero": {
+    "overline": "GMP · DIGEMID · IoT · Audit trail",
+    "title": "The Future of Pharmaceutical Quality Management",
+    "subtitle": "DoofPlus centralizes quality documentation, batch traceability, deviations and IoT data in one platform for pharmaceutical laboratories—fewer manual errors, immutable records and audits prepared in a fraction of the time.",
+    "cta_start": "Get Started",
+    "cta_plans": "View plans",
+    "trust": "Role-based access · Electronic signatures · 2FA · Immutable audit trail",
+    "image_alt": "Specialist operating equipment in a pharmaceutical clean room",
+    "badge": "Ready for release",
+    "badge_text": "<strong>B-26038</strong> · Paracetamol 500 mg · 6/6 checks passed · Approved by María México"
   },
-  services: {
+  "workspace": {
+    "overline": "Get started",
+    "title": "Choose your workspace",
+    "subtitle": "Sign in to the environment of your segment in the Web Application. After sign-in, your role and plant determine the modules and approvals you can use.",
+    "qa_tag": "QA / QC",
+    "qa_title": "For QA/QC Specialists",
+    "qa_text": "Approve documents, review analytical results, manage deviations and CAPA, and release batches with an electronic signature.",
+    "qa_cta": "Sign in to the QA/QC environment →",
+    "prod_tag": "Production",
+    "prod_title": "For Production Supervisors",
+    "prod_text": "Create production orders, follow each batch in real time, receive raw materials and react to IoT alerts on the line.",
+    "prod_cta": "Sign in to the Production environment →",
+    "new_title": "New to DoofPlus?",
+    "new_text": "The laboratory administrator registers the organization and then invites the team. Have a question first? Write to our team.",
+    "register": "Register your laboratory",
+    "contact": "Contact us"
+  },
+  "services": {
     "overline": "What we offer",
     "title": "Our services",
     "subtitle": "Four services that cover the life cycle of a pharmaceutical batch, from the production line to the regulatory audit.",
@@ -61,7 +60,7 @@ const en ={
     "batch_text": "Production orders, master formulas and electronic batch records from issuance to QA release.",
     "learn_more": "Learn more →"
   },
-  features: {
+  "features": {
     "overline": "Features",
     "title": "Everything your quality team needs, connected",
     "subtitle": "Select a feature to see how it works.",
@@ -104,7 +103,7 @@ const en ={
     "s_watch": "Under review",
     "s_target": "Above target"
   },
-  product: {
+  "product": {
     "overline": "About the product",
     "title": "See DoofPlus in action",
     "subtitle": "A three-minute video about how DoofPlus connects the production line with the quality team, from the IoT alert to the QA release decision.",
@@ -118,7 +117,7 @@ const en ={
     "soon": "The video will be published soon on the DoofPlus YouTube channel.",
     "unavailable": "The video is not available right now. You can watch it on the DoofPlus YouTube channel."
   },
-  benefits: {
+  "benefits": {
     "overline": "Benefits",
     "title": "Why laboratories choose DoofPlus",
     "subtitle": "Results aligned with the goals defined with QA/QC specialists and production supervisors.",
@@ -131,7 +130,39 @@ const en ={
     "b4_title": "In servers or infrastructure",
     "b4_text": "A cloud SaaS platform with monthly or annual subscription that scales with your laboratory."
   },
-  plans: {
+  "about": {
+    "overline": "About us",
+    "title": "DoofPlus: Transforming Pharmaceutical Quality Management with IoT and Regulatory Compliance",
+    "text": "DoofPlus is developed by IngesCompanyCC, a startup that builds digital solutions for highly regulated industries. The platform centralizes the information of manufacturing and quality control processes, giving laboratories organized, reliable records that support compliance with Good Manufacturing Practices (GMP) and DIGEMID requirements.",
+    "tag1": "Traceability",
+    "tag2": "Data integrity",
+    "tag3": "Regulatory compliance",
+    "tag4": "Open technology",
+    "mission_title": "Our mission",
+    "mission_text": "Design open technological solutions that digitize and optimize pharmaceutical quality management, integrating operational and IoT data to strengthen traceability, regulatory compliance and process reliability.",
+    "vision_title": "Our vision",
+    "vision_text": "Become a reference in digital quality-assurance solutions for the Latin American pharmaceutical industry, enabling open technologies that improve traceability, data integrity and compliance management."
+  },
+  "team": {
+    "overline": "Our team",
+    "title": "The people behind DoofPlus",
+    "subtitle": "Software Engineering students at UPC who design, build and validate DoofPlus.",
+    "role": "Software Engineer",
+    "role_female": "Software Engineer",
+    "marcelo": "Punctual and communicative; works with C++ and Python and enjoys solving problems as a team.",
+    "yhoshua": "Curious about technology and calm under pressure; follows the latest trends in software.",
+    "cristina": "Responsible, organized and committed; experienced in programming, databases and project development.",
+    "nestor": "Passionate about application development, databases and agile methodologies.",
+    "rodolfo": "Punctual and responsible; drawn to programming since his first school courses.",
+    "video_title": "Meet the team",
+    "video_text": "A short video where the members of IngesCompanyCC present themselves and explain how they build DoofPlus.",
+    "player_title": "DoofPlus · About the Team",
+    "play": "Play the team video",
+    "youtube": "Can't play the video? Watch it on YouTube →",
+    "soon": "The team video will be published soon on the DoofPlus YouTube channel.",
+    "unavailable": "The video is not available right now. You can watch it on the DoofPlus YouTube channel."
+  },
+  "plans": {
     "overline": "Plans",
     "title": "Simple plans for every laboratory",
     "subtitle": "Public prices with no hardware investment. Pay monthly or annually and get two months free.",
@@ -160,39 +191,7 @@ const en ={
     "enterprise_cta": "Get Enterprise",
     "note": "Prices in US dollars; taxes not included. You can change or cancel your plan before the renewal date."
   },
-  about: {
-    "overline": "About us",
-    "title": "DoofPlus: Transforming Pharmaceutical Quality Management with IoT and Regulatory Compliance",
-    "text": "DoofPlus is developed by IngesCompanyCC, a startup that builds digital solutions for highly regulated industries. The platform centralizes the information of manufacturing and quality control processes, giving laboratories organized, reliable records that support compliance with Good Manufacturing Practices (GMP) and DIGEMID requirements.",
-    "tag1": "Traceability",
-    "tag2": "Data integrity",
-    "tag3": "Regulatory compliance",
-    "tag4": "Open technology",
-    "mission_title": "Our mission",
-    "mission_text": "Design open technological solutions that digitize and optimize pharmaceutical quality management, integrating operational and IoT data to strengthen traceability, regulatory compliance and process reliability.",
-    "vision_title": "Our vision",
-    "vision_text": "Become a reference in digital quality-assurance solutions for the Latin American pharmaceutical industry, enabling open technologies that improve traceability, data integrity and compliance management."
-  },
-  team: {
-    "overline": "Our team",
-    "title": "The people behind DoofPlus",
-    "subtitle": "Software Engineering students at UPC who design, build and validate DoofPlus.",
-    "role": "Software Engineer",
-    "role_female": "Software Engineer",
-    "marcelo": "Punctual and communicative; works with C++ and Python and enjoys solving problems as a team.",
-    "yhoshua": "Curious about technology and calm under pressure; follows the latest trends in software.",
-    "cristina": "Responsible, organized and committed; experienced in programming, databases and project development.",
-    "nestor": "Passionate about application development, databases and agile methodologies.",
-    "rodolfo": "Punctual and responsible; drawn to programming since his first school courses.",
-    "video_title": "Meet the team",
-    "video_text": "A short video where the members of IngesCompanyCC present themselves and explain how they build DoofPlus.",
-    "player_title": "DoofPlus · About the Team",
-    "play": "Play the team video",
-    "youtube": "Can't play the video? Watch it on YouTube →",
-    "soon": "The team video will be published soon on the DoofPlus YouTube channel.",
-    "unavailable": "The video is not available right now. You can watch it on the DoofPlus YouTube channel."
-  },
-  testimonials: {
+  "testimonials": {
     "overline": "Testimonials",
     "title": "What our clients think",
     "t1_text": "“DoofPlus cut our DIGEMID evaluation preparation from three weeks to a couple of days. The tamper-proof logs and e-signatures are exactly what we were missing.”",
@@ -204,7 +203,7 @@ const en ={
     "rating5": "Rated 5 out of 5",
     "rating4": "Rated 4 out of 5"
   },
-  faq: {
+  "faq": {
     "overline": "FAQ",
     "title": "Frequently asked questions",
     "subtitle": "Select a question to see its answer.",
@@ -221,13 +220,13 @@ const en ={
     "more": "Didn't find your answer?",
     "contact": "Contact the DoofPlus team →"
   },
-  contact: {
+  "contact": {
     "overline": "Contact",
     "title": "Ready to digitize your laboratory's quality management?",
     "text": "Send us your question about the platform or the plans and our team will reply within two business days.",
     "info": "doofplus.inges@gmail.com · Lima, Perú"
   },
-  form: {
+  "form": {
     "name": "Full name",
     "name_ph": "e.g. María Pérez",
     "email": "Work email",
@@ -247,7 +246,7 @@ const en ={
     "success_text": "Thank you, {name}. Our team will reply to <strong>{email}</strong> within two business days.",
     "again": "Send another inquiry"
   },
-  footer: {
+  "footer": {
     "tagline": "Pharmaceutical quality management with IoT and regulatory compliance.",
     "product": "Product",
     "features": "Features",
@@ -266,7 +265,7 @@ const en ={
     "qa_access": "QA/QC Access",
     "prod_access": "Production Access"
   },
-  legal: {
+  "legal": {
     "overline": "Legal",
     "updated": "Last updated: October 1, 2026",
     "terms_title": "Terms of Service",
