@@ -1702,3 +1702,79 @@ h1 {
     overflow: hidden;
   }
 }
+
+/* ---------- Responsive breakpoints ---------- */
+@media (max-width: 1080px) {
+  :root {
+    --grid-gutter: 24px;
+  }
+
+  .navbar {
+    padding: 20px 32px;
+  }
+
+  .nav-links {
+    gap: 20px;
+  }
+
+  .hero {
+    padding: 48px 32px;
+    gap: 40px;
+  }
+
+  h1 {
+    font-size: 52px;
+  }
+}
+
+@media (max-width: 900px) {
+  :root {
+    --grid-gutter: 16px;
+  }
+
+  .hero {
+    flex-direction: column;
+    align-items: stretch;
+    min-height: auto;
+    padding: 40px 24px 56px;
+  }
+
+  .hero-content {
+    max-width: none;
+  }
+
+  .hero-visual {
+    justify-content: center;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  .section {
+    padding: 64px 0;
+  }
+
+  .section h2 {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero-buttons {
+    flex-direction: column;
+  }
+
+  h1 {
+    font-size: 34px;
+  }
+
+  .footer-grid > :nth-child(n) {
+    grid-column: span 12;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
