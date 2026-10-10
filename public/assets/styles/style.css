@@ -349,15 +349,15 @@ h1 {
   color: var(--text);
 }
 
-.section-mint h2, 
-.section-mint .overline, 
-.segment-card h3, 
+.section-mint h2,
+.section-mint .overline,
+.segment-card h3,
 .new-banner h3 {
   color: var(--text);
 }
 
-.section-mint .section-subtitle, 
-.segment-card p, 
+.section-mint .section-subtitle,
+.segment-card p,
 .new-banner p {
   color: var(--navy-line);
 }
@@ -662,6 +662,10 @@ h1 {
   padding: 0 22px 28px;
   color: var(--muted);
   font-size: 14px;
+}
+
+.accordion-item.open .accordion-body {
+  display: block;
 }
 
 
