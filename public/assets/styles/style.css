@@ -1830,3 +1830,20 @@ textarea {
     cursor: auto;
   }
 }
+
+/* ---------- Link buttons and active section ---------- */
+.nav-actions .btn,
+.btn-teal-large,
+.btn-outline {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+}
+
+.nav-links a.active {
+  color: var(--text-white);
+}
+
+.mobile-links a.active {
+  color: var(--teal-bright);
+}

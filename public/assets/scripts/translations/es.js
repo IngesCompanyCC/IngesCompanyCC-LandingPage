@@ -1,4 +1,9 @@
 const es ={
+  meta: {
+    "home": "DoofPlus - Gestión de Calidad Farmacéutica",
+    "terms": "Términos de Servicio - DoofPlus",
+    "privacy": "Política de Privacidad - DoofPlus"
+  },
   nav: {
     home: "Inicio",
     features: "Funcionalidades",
@@ -20,7 +25,8 @@ const es ={
     btn_capabilities: "Ver capacidades",
     footer: "Acceso por roles · Registros atribuidos · Aprobaciones controladas · 2FA en pasos críticos",
     badge: "LISTO PARA LIBERAR",
-    badge_text: "<strong>B-26038</strong> · Evidencia completa · 6 de 6 prerrequisitos aprobados · Maya Chen"
+    badge_text: "<strong>B-26038</strong> · Evidencia completa · 6 de 6 prerrequisitos aprobados · Maya Chen",
+    image_alt: "Especialista operando un equipo en una sala limpia farmacéutica"
   }
 ,
   workspace: {
