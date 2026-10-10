@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
   <!-- Meta tags for responsive design and character encoding -->
   <meta charset="UTF-8">
@@ -7,7 +7,7 @@
   <meta name="description" content="DoofPlus centralizes quality documentation, batch traceability, deviations and IoT data for pharmaceutical laboratories in one platform.">
   <meta name="keywords" content="DoofPlus, pharmaceutical quality management, GMP, BPM, DIGEMID, batch traceability, IoT, audit trail, QA/QC, SaaS">
   <meta name="author" content="IngesCompanyCC">
-  <title>DoofPlus - Pharmaceutical Workspace</title>
+  <title data-i18n="meta.home">DoofPlus - Pharmaceutical Workspace</title>
   <link rel="icon" href="favicon.ico" sizes="any">
   <link rel="stylesheet" href="public/assets/styles/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -30,8 +30,8 @@
       <span class="separator">|</span>
       <button class="lang-btn" data-lang="es">ES</button>
     </div>
-    <button class="btn btn-teal" data-i18n="nav.qa_access"></button>
-    <button class="btn btn-teal" data-i18n="nav.prod_access"></button>
+    <a href="#workspace" class="btn btn-teal" data-magnetic data-app-segment="qa" data-i18n="nav.qa_access"></a>
+    <a href="#workspace" class="btn btn-teal" data-magnetic data-app-segment="production" data-i18n="nav.prod_access"></a>
     <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
       <span></span><span></span><span></span>
     </button>
@@ -67,8 +67,8 @@
       <p class="subtitle" data-i18n="hero.subtitle"></p>
 
       <div class="hero-buttons">
-        <button class="btn-teal-large" data-i18n="hero.btn_signin"></button>
-        <button class="btn-outline" data-i18n="hero.btn_capabilities"></button>
+        <a href="#workspace" class="btn-teal-large" data-magnetic data-i18n="hero.btn_signin"></a>
+        <a href="#features" class="btn-outline" data-magnetic data-i18n="hero.btn_capabilities"></a>
       </div>
 
       <p class="hero-footer" data-i18n="hero.footer"></p>
@@ -76,7 +76,7 @@
 
     <div class="hero-visual">
       <div class="image-wrapper">
-        <img src="public/assets/images/pharmaceutical-laboratory.jpg" alt="Pharmaceutical Laboratory" class="main-img">
+        <img src="public/assets/images/pharmaceutical-laboratory.jpg" alt="Pharmaceutical Laboratory" data-i18n-alt="hero.image_alt" class="main-img">
 
         <div class="floating-card">
           <span class="status-badge" data-i18n="hero.badge"></span>
