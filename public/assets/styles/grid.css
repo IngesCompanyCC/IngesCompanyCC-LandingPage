@@ -47,3 +47,9 @@
 .team-grid > * { grid-column: span 4; }
 .team-grid > :nth-child(4) { grid-column: 3 / span 4; }
 
+/* Contact: intro and contact info on 5 columns, form on columns 7-12 across both rows */
+.contact-grid { grid-template-rows: auto 1fr; }
+.contact-grid > .contact-intro { grid-column: 1 / span 5; grid-row: 1; }
+.contact-grid > .contact-info { grid-column: 1 / span 5; grid-row: 2; align-self: start; }
+.contact-grid > .form-card { grid-column: 7 / span 6; grid-row: 1 / span 2; }
+
