@@ -262,3 +262,23 @@ if (contactForm && contactSuccess) {
     fields.name.input.focus();
   });
 }
+
+/** Base URL of the DoofPlus Web Application. Set it when the Web Application is deployed. */
+const WEB_APP_URL = '';
+
+/** Web Application routes opened by the segment access buttons. */
+const APP_ROUTES = {
+  qa: '/login?segment=qa',
+  production: '/login?segment=production',
+  register: '/register'
+};
+
+/**
+ * Segment access buttons: QA/QC specialists and production supervisors open the
+ * sign-in of their own environment in the Web Application.
+ * While the Web Application is not deployed, they lead to the workspace section.
+ */
+document.querySelectorAll('[data-app-segment]').forEach(link => {
+  const route = APP_ROUTES[link.dataset.appSegment];
+  link.href = WEB_APP_URL && route ? WEB_APP_URL + route : '#workspace';
+});
