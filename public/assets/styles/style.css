@@ -1237,8 +1237,6 @@ h1 {
 #faq .section-subtitle {
   color: var(--muted);
 }
-  display: block;
-}
 
 #faq .accordion {
   margin-top: 40px;
@@ -1246,6 +1244,8 @@ h1 {
 
 .faq-more {
   margin-top: 24px;
+  font-size: 14px;
+}
 
 /* ---------- Contact and forms ---------- */
 :root {
