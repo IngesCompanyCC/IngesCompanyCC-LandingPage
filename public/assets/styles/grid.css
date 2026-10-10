@@ -33,3 +33,9 @@
 /* Features: preview panel 5 columns, accordion 7 columns */
 .features-grid > :first-child { grid-column: span 5; }
 .features-grid > :last-child { grid-column: span 7; }
+
+/* About the product: intro and chapters on 5 columns, video on 7 columns across both rows */
+.product-grid { grid-template-rows: auto auto; }
+.product-grid > .product-intro { grid-column: 1 / span 5; grid-row: 1; align-self: end; }
+.product-grid > .product-details { grid-column: 1 / span 5; grid-row: 2; align-self: start; }
+.product-grid > .video-player { grid-column: 6 / span 7; grid-row: 1 / span 2; align-self: center; }
