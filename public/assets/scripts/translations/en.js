@@ -236,5 +236,24 @@ const en ={
     "success_title": "Inquiry sent",
     "success_text": "Thank you, {name}. Our team will reply to <strong>{email}</strong> within two business days.",
     "again": "Send another inquiry"
+  },
+  footer: {
+    "tagline": "Pharmaceutical quality management with IoT and regulatory compliance.",
+    "product": "Product",
+    "features": "Features",
+    "pricing": "Pricing Plans",
+    "how": "How it works",
+    "company": "Company",
+    "about": "About Us",
+    "team": "Our Team",
+    "faq": "FAQ",
+    "contact": "Contact",
+    "location": "Lima, Perú",
+    "legal": "Legal",
+    "terms": "Terms of Service",
+    "privacy": "Privacy Policy",
+    "copyright": "Copyright © 2026 IngesCompanyCC. All rights reserved.",
+    "qa_access": "QA/QC Access",
+    "prod_access": "Production Access"
   }
 }
