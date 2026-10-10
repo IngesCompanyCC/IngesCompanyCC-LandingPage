@@ -29,6 +29,7 @@ Built with HTML5, CSS3 and JavaScript, bilingual (English by default and Latin A
 
 ```text
 public/assets/
+├── cursors/                    # Custom cursors (default, pointer and text)
 ├── images/                     # Logo, hero image and team photos
 ├── scripts/
 │   ├── main.js                 # Language switcher and page behavior
