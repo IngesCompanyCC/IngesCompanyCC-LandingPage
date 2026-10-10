@@ -9,7 +9,8 @@ const es ={
     prod_access: "Acceso Producción",
     back: "← Volver a DoofPlus",
     menu: "Abrir menú",
-    close: "Cerrar menú"
+    close: "Cerrar menú",
+    skip: "Saltar al contenido principal"
   },
   hero: {
     overline: "CALIDAD · PRODUCCIÓN · CONECTADOS",
