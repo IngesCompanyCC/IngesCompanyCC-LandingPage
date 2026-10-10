@@ -7,7 +7,9 @@ const en ={
     about: "About Us",
     qa_access: "QA/QC Access",
     prod_access: "Production Access",
-    back: "← Back to DoofPlus"
+    back: "← Back to DoofPlus",
+    menu: "Open menu",
+    close: "Close menu"
   },
   hero: {
     overline: "QUALITY · PRODUCTION · CONNECTED",
