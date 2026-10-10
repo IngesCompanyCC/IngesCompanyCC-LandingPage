@@ -26,3 +26,6 @@
 .grid-2 > * { grid-column: span 6; }
 .grid-3 > * { grid-column: span 4; }
 .grid-4 > * { grid-column: span 3; }
+
+/* Hero: text 6 columns, image 6 columns */
+.hero-grid > * { grid-column: span 6; }
