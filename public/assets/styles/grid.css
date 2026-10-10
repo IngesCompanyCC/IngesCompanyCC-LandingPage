@@ -1,0 +1,58 @@
+/*
+ * 12-column fluid grid of the Web Style Guide (section 4.1.2).
+ * Every layout of the site is a 12-column grid and each block spans a number of columns:
+ * desktop uses the spans below, tablet (≤1080px) adapts them and mobile (≤900px)
+ * stacks every block in one column (see responsive.css).
+ */
+
+.grid-12,
+.hero-grid,
+.grid-2,
+.grid-3,
+.grid-4,
+.features-grid,
+.product-grid,
+.about-grid,
+.team-grid,
+.contact-grid,
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(var(--grid-columns), minmax(0, 1fr));
+    column-gap: var(--grid-gutter);
+    row-gap: var(--grid-row-gap);
+}
+
+/* Equal columns */
+.grid-2 > * { grid-column: span 6; }
+.grid-3 > * { grid-column: span 4; }
+.grid-4 > * { grid-column: span 3; }
+
+/* Hero: text 6 columns, image 6 columns */
+.hero-grid > * { grid-column: span 6; }
+
+/* Features: preview panel 5 columns, accordion 7 columns */
+.features-grid > :first-child { grid-column: span 5; }
+.features-grid > :last-child { grid-column: span 7; }
+
+/* About the product: intro and chapters on 5 columns, video on 7 columns across both rows */
+.product-grid { grid-template-rows: auto auto; }
+.product-grid > .product-intro { grid-column: 1 / span 5; grid-row: 1; align-self: end; }
+.product-grid > .product-details { grid-column: 1 / span 5; grid-row: 2; align-self: start; }
+.product-grid > .video-player { grid-column: 6 / span 7; grid-row: 1 / span 2; align-self: center; }
+
+/* About us: text 6 columns, mission and vision 6 columns */
+.about-grid > * { grid-column: span 6; }
+
+/* Team: three cards of 4 columns, the last two centered (columns 3-6 and 7-10) */
+.team-grid > * { grid-column: span 4; }
+.team-grid > :nth-child(4) { grid-column: 3 / span 4; }
+
+/* Contact: intro and contact info on 5 columns, form on columns 7-12 across both rows */
+.contact-grid { grid-template-rows: auto 1fr; }
+.contact-grid > .contact-intro { grid-column: 1 / span 5; grid-row: 1; }
+.contact-grid > .contact-info { grid-column: 1 / span 5; grid-row: 2; align-self: start; }
+.contact-grid > .form-card { grid-column: 7 / span 6; grid-row: 1 / span 2; }
+
+/* Footer: brand 4 columns, four link groups of 2 columns */
+.footer-grid > * { grid-column: span 2; }
+.footer-grid > :first-child { grid-column: span 4; }
