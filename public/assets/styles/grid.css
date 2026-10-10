@@ -29,3 +29,7 @@
 
 /* Hero: text 6 columns, image 6 columns */
 .hero-grid > * { grid-column: span 6; }
+
+/* Features: preview panel 5 columns, accordion 7 columns */
+.features-grid > :first-child { grid-column: span 5; }
+.features-grid > :last-child { grid-column: span 7; }
