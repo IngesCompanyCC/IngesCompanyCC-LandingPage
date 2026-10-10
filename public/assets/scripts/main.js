@@ -282,3 +282,35 @@ document.querySelectorAll('[data-app-segment]').forEach(link => {
   const route = APP_ROUTES[link.dataset.appSegment];
   link.href = WEB_APP_URL && route ? WEB_APP_URL + route : '#workspace';
 });
+
+const menuToggle = document.querySelector('.menu-toggle');
+const mobileMenu = document.getElementById('mobile-menu');
+
+/**
+ * Opens or closes the full-screen mobile menu.
+ * @param {boolean} open - Whether the menu is open.
+ */
+function setMenuOpen(open) {
+  if (!menuToggle || !mobileMenu) return;
+  mobileMenu.hidden = !open;
+  menuToggle.setAttribute('aria-expanded', String(open));
+  menuToggle.setAttribute('aria-label', translate(open ? 'nav.close' : 'nav.menu'));
+  document.body.classList.toggle('menu-open', open);
+}
+
+/**
+ * Mobile menu: the toggle opens it, and a link, the Escape key or a desktop-size screen close it.
+ */
+if (menuToggle && mobileMenu) {
+  menuToggle.addEventListener('click', () => setMenuOpen(mobileMenu.hidden));
+  mobileMenu.querySelectorAll('a').forEach(link => link.addEventListener('click', () => setMenuOpen(false)));
+  document.addEventListener('keydown', event => {
+    if (event.key === 'Escape' && !mobileMenu.hidden) {
+      setMenuOpen(false);
+      menuToggle.focus();
+    }
+  });
+  window.matchMedia('(min-width: 901px)').addEventListener('change', event => {
+    if (event.matches) setMenuOpen(false);
+  });
+}

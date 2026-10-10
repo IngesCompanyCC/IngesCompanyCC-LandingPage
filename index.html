@@ -27,6 +27,27 @@
     </div>
     <button class="btn btn-teal" data-i18n="nav.qa_access"></button>
     <button class="btn btn-teal" data-i18n="nav.prod_access"></button>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+
+  <!-- Mobile menu (≤ 900px) -->
+  <div class="mobile-menu" id="mobile-menu" hidden>
+    <nav class="mobile-links" aria-label="Main">
+      <a href="#home" data-i18n="nav.home">Home</a>
+      <a href="#features" data-i18n="nav.features">Features</a>
+      <a href="#benefits" data-i18n="nav.benefits">Benefits</a>
+      <a href="#plans" data-i18n="nav.plans">Plans</a>
+      <a href="#about" data-i18n="nav.about">About Us</a>
+    </nav>
+    <a href="#" class="btn btn-teal" data-app-segment="qa" data-i18n="nav.qa_access"></a>
+    <a href="#" class="btn btn-teal" data-app-segment="production" data-i18n="nav.prod_access"></a>
+    <div class="lang-switch">
+      <button class="lang-btn active" data-lang="en">EN</button>
+      <span class="separator">|</span>
+      <button class="lang-btn" data-lang="es">ES</button>
+    </div>
   </div>
 </header>
 
