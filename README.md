@@ -33,19 +33,34 @@ Built with HTML5, CSS3 and JavaScript, bilingual (English by default and Latin A
 ```text
 public/assets/
 ├── cursors/                    # Custom cursors (default, pointer and text)
+├── i18n/                       # en.json and es.json (same keys in both files)
 ├── images/                     # Logo, hero image and team photos
 ├── scripts/
-│   ├── main.js                 # Language switcher and page behavior
-│   └── translations/           # en.js and es.js (same keys in both files)
+│   ├── main.js                 # Entry point (ES module) shared by every page
+│   ├── config.js               # Web Application URL, video URLs and segment routes
+│   ├── i18n.js                 # I18nService: loads the JSON files and applies data-i18n
+│   ├── components/             # Language switcher, navbar, segment access, accordions,
+│   │                           # billing toggle, video players and contact inquiry
+│   ├── effects/                # Magnetic effect of the call-to-action buttons
+│   └── utils/                  # Safe access to localStorage and sessionStorage
 └── styles/
-    └── style.css               # Site styles
+    ├── main.css                # Imports the modules below in cascade order
+    ├── variables.css           # Design tokens
+    ├── reset.css               # Base element styles
+    ├── layout.css              # Container, navbar, sections and footer
+    ├── grid.css                # 12-column fluid grid
+    ├── components.css          # Buttons, links, forms and skip link
+    ├── sections.css            # Sections of index.html
+    ├── pages.css               # terms.html and privacy.html
+    ├── cursor.css              # Custom cursors
+    └── responsive.css          # Breakpoints (1080px, 900px and 600px)
 ```
 
-Texts are referenced from the HTML with `data-i18n` attributes. To add a text, add the same key to `en.js` and `es.js`. English (`en-US`) is the default language and Latin American Spanish (`es-419`) is the alternative.
+Texts are referenced from the HTML with `data-i18n` attributes. To add a text, add the same key to `en.json` and `es.json`. English (`en-US`) is the default language and Latin American Spanish (`es-419`) is the alternative.
 
 ## Run locally
 
-Serve the site over HTTP, for example with the built-in server of WebStorm (*Open in Browser*) or:
+The scripts are ES modules and the texts are loaded with `fetch`, so the site must be served over HTTP (opening `index.html` directly from the file system does not load them):
 
 ```bash
 python -m http.server 8080
