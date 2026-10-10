@@ -1,4 +1,9 @@
 const en ={
+  meta: {
+    "home": "DoofPlus - Pharmaceutical Quality Management",
+    "terms": "Terms of Service - DoofPlus",
+    "privacy": "Privacy Policy - DoofPlus"
+  },
   nav: {
     home: "Home",
     features: "Features",
@@ -20,7 +25,8 @@ const en ={
     btn_capabilities: "View capabilities",
     footer: "Role-based access · Attributed records · Controlled approvals · 2FA at critical steps",
     badge: "READY FOR RELEASE",
-    badge_text: "<strong>B-26038</strong> · Evidence complete · 6 of 6 prerequisites passed · Maya Chen"
+    badge_text: "<strong>B-26038</strong> · Evidence complete · 6 of 6 prerequisites passed · Maya Chen",
+    image_alt: "Specialist operating equipment in a pharmaceutical clean room"
   }
 
 ,
