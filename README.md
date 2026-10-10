@@ -9,6 +9,9 @@ Landing Page of **DoofPlus**, the pharmaceutical quality-management platform dev
 
 Built with HTML5, CSS3 and JavaScript, bilingual (English by default and Latin American Spanish) and responsive for desktop and mobile.
 
+- **Landing Page:** https://ingescompanycc.github.io/IngesCompanyCC-LandingPage/
+- **Web Application:** https://ingescompanycc-frontend.web.app
+
 ## Team
 
 - Marcelo Angulo
