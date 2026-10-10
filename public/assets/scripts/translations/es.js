@@ -6,7 +6,8 @@ const es ={
     plans: "Planes",
     about: "Nosotros",
     qa_access: "Acceso QA/QC",
-    prod_access: "Acceso Producción"
+    prod_access: "Acceso Producción",
+    back: "← Volver a DoofPlus"
   },
   hero: {
     overline: "CALIDAD · PRODUCCIÓN · CONECTADOS",
@@ -254,5 +255,35 @@ const es ={
     "copyright": "Copyright © 2026 IngesCompanyCC. Todos los derechos reservados.",
     "qa_access": "Acceso QA/QC",
     "prod_access": "Acceso Producción"
+  },
+  legal: {
+    "overline": "Legal",
+    "updated": "Última actualización: 1 de octubre de 2026",
+    "terms_title": "Términos de Servicio",
+    "terms_intro": "Estos Términos de Servicio regulan el uso de DoofPlus, la plataforma de gestión de calidad farmacéutica desarrollada por IngesCompanyCC, por parte de los laboratorios suscritos y sus usuarios autorizados. Al registrar una organización o usar la plataforma, el laboratorio acepta estos términos.",
+    "t1_title": "1. Servicio",
+    "t1_text": "DoofPlus brinda software para la documentación de calidad, la trazabilidad de lotes, las desviaciones y CAPA, el audit trail y el monitoreo IoT mediante ThingsBoard. La plataforma apoya procesos controlados; la validación de sistemas computarizados y el cumplimiento de las BPM y de los requisitos de DIGEMID siguen siendo responsabilidad de cada laboratorio.",
+    "t2_title": "2. Cuentas y acceso",
+    "t2_text": "El administrador del laboratorio registra la organización, invita a los usuarios y asigna sus roles. Cada usuario es responsable de mantener en reserva sus credenciales y su autenticación de dos factores. Las firmas electrónicas son personales e intransferibles.",
+    "t3_title": "3. Suscripciones y pagos",
+    "t3_text": "Los planes (Standard Lab y Enterprise) se facturan mensual o anualmente en dólares estadounidenses mediante el proveedor de pagos Niubiz. Las suscripciones se renuevan automáticamente salvo que se cancelen antes de la fecha de renovación. Los límites de cada plan, como el número de dispositivos IoT y de usuarios, se aplican según lo publicado en la sección de Planes.",
+    "t4_title": "4. Propiedad e integridad de los datos",
+    "t4_text": "Los registros creados por el laboratorio le pertenecen. DoofPlus conserva un audit trail inalterable de cada cambio, con su autor, fecha y motivo, y no modifica los registros del cliente salvo a pedido del laboratorio.",
+    "t5_title": "5. Compromiso profesional y ético",
+    "t5_text": "IngesCompanyCC desarrolla DoofPlus siguiendo el Código de Ética de Ingeniería de Software de ACM/IEEE y el Código de Ética del Colegio de Ingenieros del Perú (CIP): actúa en interés público, es transparente sobre los límites del producto y reporta cualquier incidente que afecte los datos de sus clientes.",
+    "t6_title": "6. Cambios y contacto",
+    "t6_text": "IngesCompanyCC puede actualizar estos términos y lo notificará a los administradores con 30 días de anticipación. Consultas: doofplus.inges@gmail.com · Lima, Perú.",
+    "privacy_title": "Política de Privacidad",
+    "privacy_intro": "Esta política explica cómo IngesCompanyCC recopila y trata los datos personales a través de la Landing Page y la Web Application de DoofPlus, conforme a la Ley de Protección de Datos Personales del Perú (Ley N.° 29733) y su reglamento.",
+    "p1_title": "1. Datos que recopilamos",
+    "p1_text": "De los visitantes que envían una consulta: nombre, correo de trabajo, nombre del laboratorio y la consulta. De los usuarios de la Web Application: nombre, correo de trabajo, rol, planta y los registros que crean o firman.",
+    "p2_title": "2. Finalidad",
+    "p2_text": "Usamos los datos para responder las consultas, brindar el servicio, autenticar a los usuarios, mantener el audit trail que exigen las BPM y enviar notificaciones del servicio. No vendemos datos personales.",
+    "p3_title": "3. Almacenamiento y seguridad",
+    "p3_text": "Los datos se guardan en bases de datos protegidas con cifrado en tránsito, acceso por roles y autenticación de dos factores. Los registros del audit trail se conservan durante el plazo que exige el sistema de calidad del laboratorio.",
+    "p4_title": "4. Terceros",
+    "p4_text": "Solo compartimos los datos necesarios con proveedores del servicio: ThingsBoard (telemetría IoT), Niubiz (pagos) y nuestro proveedor en la nube, bajo acuerdos de confidencialidad.",
+    "p5_title": "5. Tus derechos",
+    "p5_text": "Puedes ejercer tus derechos de acceso, rectificación, cancelación y oposición (ARCO) escribiendo a doofplus.inges@gmail.com. También puedes presentar un reclamo ante la Autoridad Nacional de Protección de Datos Personales del Perú."
   }
 }

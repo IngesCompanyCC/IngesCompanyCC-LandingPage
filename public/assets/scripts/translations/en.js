@@ -6,7 +6,8 @@ const en ={
     plans: "Plans",
     about: "About Us",
     qa_access: "QA/QC Access",
-    prod_access: "Production Access"
+    prod_access: "Production Access",
+    back: "← Back to DoofPlus"
   },
   hero: {
     overline: "QUALITY · PRODUCTION · CONNECTED",
@@ -255,5 +256,35 @@ const en ={
     "copyright": "Copyright © 2026 IngesCompanyCC. All rights reserved.",
     "qa_access": "QA/QC Access",
     "prod_access": "Production Access"
+  },
+  legal: {
+    "overline": "Legal",
+    "updated": "Last updated: October 1, 2026",
+    "terms_title": "Terms of Service",
+    "terms_intro": "These Terms of Service govern the use of DoofPlus, the pharmaceutical quality-management platform developed by IngesCompanyCC, by laboratories that subscribe to it and by their authorized users. By registering an organization or using the platform, the laboratory accepts these terms.",
+    "t1_title": "1. Service",
+    "t1_text": "DoofPlus provides software for quality documentation, batch traceability, deviations and CAPA, audit trail and IoT monitoring through ThingsBoard. The platform supports controlled processes; computerized-system validation and compliance with GMP and DIGEMID requirements remain the responsibility of each laboratory.",
+    "t2_title": "2. Accounts and access",
+    "t2_text": "The laboratory administrator registers the organization, invites users and assigns their roles. Each user is responsible for keeping their credentials and two-factor authentication confidential. Electronic signatures are personal and non-transferable.",
+    "t3_title": "3. Subscriptions and payments",
+    "t3_text": "Plans (Standard Lab and Enterprise) are billed monthly or annually in US dollars through the payment provider Niubiz. Subscriptions renew automatically unless they are cancelled before the renewal date. Plan limits, such as the number of IoT devices and users, apply as published on the Plans page.",
+    "t4_title": "4. Data ownership and integrity",
+    "t4_text": "Records created by the laboratory belong to the laboratory. DoofPlus keeps an immutable audit trail of every change, with its author, date and reason, and does not modify customer records except at the laboratory's request.",
+    "t5_title": "5. Professional and ethical commitment",
+    "t5_text": "IngesCompanyCC develops DoofPlus following the ACM/IEEE Software Engineering Code of Ethics and the Code of Ethics of the Colegio de Ingenieros del Perú (CIP): it acts in the public interest, is transparent about the limits of the product and reports any incident that affects customer data.",
+    "t6_title": "6. Changes and contact",
+    "t6_text": "IngesCompanyCC may update these terms and will notify administrators 30 days in advance. Questions: doofplus.inges@gmail.com · Lima, Perú.",
+    "privacy_title": "Privacy Policy",
+    "privacy_intro": "This policy explains how IngesCompanyCC collects and processes personal data through the DoofPlus Landing Page and Web Application, in accordance with Peru's Personal Data Protection Law (Law N.° 29733) and its regulations.",
+    "p1_title": "1. Data we collect",
+    "p1_text": "From visitors who send an inquiry: name, work email, laboratory name and the inquiry. From users of the Web Application: name, work email, role, plant and the records they create or sign.",
+    "p2_title": "2. Purpose",
+    "p2_text": "We use the data to answer inquiries, provide the service, authenticate users, keep the audit trail required by GMP and send service notifications. We do not sell personal data.",
+    "p3_title": "3. Storage and security",
+    "p3_text": "Data is stored in databases protected with encryption in transit, role-based access and two-factor authentication. Audit-trail records are kept for the retention period required by the laboratory's quality system.",
+    "p4_title": "4. Third parties",
+    "p4_text": "We share only the data needed with service providers: ThingsBoard (IoT telemetry), Niubiz (payments) and our cloud provider, under confidentiality agreements.",
+    "p5_title": "5. Your rights",
+    "p5_text": "You may exercise your rights of access, rectification, cancellation and opposition (ARCO) by writing to doofplus.inges@gmail.com. You may also file a claim with Peru's National Authority for Personal Data Protection."
   }
 }
