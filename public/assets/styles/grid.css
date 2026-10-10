@@ -42,3 +42,8 @@
 
 /* About us: text 6 columns, mission and vision 6 columns */
 .about-grid > * { grid-column: span 6; }
+
+/* Team: three cards of 4 columns, the last two centered (columns 3-6 and 7-10) */
+.team-grid > * { grid-column: span 4; }
+.team-grid > :nth-child(4) { grid-column: 3 / span 4; }
+
