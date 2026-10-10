@@ -1,0 +1,28 @@
+/*
+ * 12-column fluid grid of the Web Style Guide (section 4.1.2).
+ * Every layout of the site is a 12-column grid and each block spans a number of columns:
+ * desktop uses the spans below, tablet (≤1080px) adapts them and mobile (≤900px)
+ * stacks every block in one column (see responsive.css).
+ */
+
+.grid-12,
+.hero-grid,
+.grid-2,
+.grid-3,
+.grid-4,
+.features-grid,
+.product-grid,
+.about-grid,
+.team-grid,
+.contact-grid,
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(var(--grid-columns), minmax(0, 1fr));
+    column-gap: var(--grid-gutter);
+    row-gap: var(--grid-row-gap);
+}
+
+/* Equal columns */
+.grid-2 > * { grid-column: span 6; }
+.grid-3 > * { grid-column: span 4; }
+.grid-4 > * { grid-column: span 3; }
