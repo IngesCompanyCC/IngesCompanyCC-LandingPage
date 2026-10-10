@@ -264,7 +264,7 @@ if (contactForm && contactSuccess) {
 }
 
 /** Base URL of the DoofPlus Web Application. Set it when the Web Application is deployed. */
-const WEB_APP_URL = 'https://ingescompanycc-app.web.app'; // TODO: Replace with real Firebase URL
+const WEB_APP_URL = 'https://ingescompanycc-frontend.web.app';
 
 /** Web Application routes opened by the segment access buttons. */
 const APP_ROUTES = {
