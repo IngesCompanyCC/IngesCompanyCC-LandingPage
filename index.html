@@ -1,40 +1,44 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-  <!-- Meta tags for responsive design and character encoding -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="DoofPlus centralizes quality documentation, batch traceability, deviations and IoT data for pharmaceutical laboratories in one platform.">
   <meta name="keywords" content="DoofPlus, pharmaceutical quality management, GMP, BPM, DIGEMID, batch traceability, IoT, audit trail, QA/QC, SaaS">
   <meta name="author" content="IngesCompanyCC">
-  <title data-i18n="meta.home">DoofPlus - Pharmaceutical Workspace</title>
+  <title data-i18n="meta.home">DoofPlus - Pharmaceutical Quality Management</title>
   <link rel="icon" href="favicon.ico" sizes="any">
-  <link rel="stylesheet" href="public/assets/styles/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="public/assets/styles/main.css">
 </head>
 <body>
 <a class="skip-link" href="#main" data-i18n="nav.skip">Skip to main content</a>
-<!-- Header section with navigation and language switcher -->
+<!-- Header: brand, section navigation, language switcher and segment access -->
 <header class="navbar">
-  <a href="#home" class="logo"><img src="public/assets/images/doofplus-logo.png" alt="DoofPlus" class="logo-img"></a>
-  <nav class="nav-links" aria-label="Main">
-    <a href="#home" data-i18n="nav.home">Home</a>
-    <a href="#features" data-i18n="nav.features">Features</a>
-    <a href="#benefits" data-i18n="nav.benefits">Benefits</a>
-    <a href="#plans" data-i18n="nav.plans">Plans</a>
-    <a href="#about" data-i18n="nav.about">About Us</a>
-  </nav>
-  <div class="nav-actions">
-    <div class="lang-switch">
-      <button class="lang-btn active" data-lang="en">EN</button>
-      <span class="separator">|</span>
-      <button class="lang-btn" data-lang="es">ES</button>
+  <div class="container navbar-inner">
+    <a href="#home" class="brand"><img src="public/assets/images/doofplus-logo.png" alt="DoofPlus" class="brand-logo"></a>
+
+    <nav class="nav-links" aria-label="Main">
+      <a href="#home" class="active" data-i18n="nav.home">Home</a>
+      <a href="#features" data-i18n="nav.features">Features</a>
+      <a href="#benefits" data-i18n="nav.benefits">Benefits</a>
+      <a href="#plans" data-i18n="nav.plans">Plans</a>
+      <a href="#about" data-i18n="nav.about">About Us</a>
+    </nav>
+
+    <div class="nav-actions">
+      <div class="lang-switch" role="group" aria-label="Language">
+        <button class="lang-btn active" type="button" data-lang="en">EN</button>
+        <button class="lang-btn" type="button" data-lang="es">ES</button>
+      </div>
+      <a href="#workspace" class="link-teal desktop-only" data-i18n="nav.sign_in">Sign in</a>
+      <a href="#workspace" data-magnetic class="btn btn-primary desktop-only" data-i18n="nav.get_started">Get Started</a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" data-i18n-aria="nav.menu">
+        <span></span><span></span><span></span>
+      </button>
     </div>
-    <a href="#workspace" class="btn btn-teal" data-magnetic data-app-segment="qa" data-i18n="nav.qa_access"></a>
-    <a href="#workspace" class="btn btn-teal" data-magnetic data-app-segment="production" data-i18n="nav.prod_access"></a>
-    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
-      <span></span><span></span><span></span>
-    </button>
   </div>
 
   <!-- Mobile menu (≤ 900px) -->
@@ -46,49 +50,43 @@
       <a href="#plans" data-i18n="nav.plans">Plans</a>
       <a href="#about" data-i18n="nav.about">About Us</a>
     </nav>
-    <a href="#" class="btn btn-teal" data-app-segment="qa" data-i18n="nav.qa_access"></a>
-    <a href="#" class="btn btn-teal" data-app-segment="production" data-i18n="nav.prod_access"></a>
-    <div class="lang-switch">
-      <button class="lang-btn active" data-lang="en">EN</button>
-      <span class="separator">|</span>
-      <button class="lang-btn" data-lang="es">ES</button>
+    <a href="#workspace" class="mobile-sign-in" data-i18n="nav.sign_in">Sign in</a>
+    <a href="#workspace" class="btn btn-primary btn-block btn-lg" data-i18n="nav.get_started">Get Started</a>
+    <a href="#plans" class="btn btn-ghost-light btn-block btn-lg" data-i18n="hero.cta_plans">View plans</a>
+    <div class="lang-switch lang-switch-dark" role="group" aria-label="Language">
+      <button class="lang-btn" type="button" data-lang="en">EN</button>
+      <button class="lang-btn" type="button" data-lang="es">ES</button>
     </div>
   </div>
 </header>
 
 <main id="main">
-  <section class="hero" id="home">
-    <div class="hero-content">
-      <span class="overline" data-i18n="hero.overline"></span>
-
-      <!-- TODO: Implement dynamic content -->
-
-      <h1 data-i18n="hero.title"></h1>
-      <p class="subtitle" data-i18n="hero.subtitle"></p>
-
-      <div class="hero-buttons">
-        <a href="#workspace" class="btn-teal-large" data-magnetic data-i18n="hero.btn_signin"></a>
-        <a href="#features" class="btn-outline" data-magnetic data-i18n="hero.btn_capabilities"></a>
+  <!-- Hero: value proposition -->
+  <section class="hero section-dark" id="home">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <span class="overline overline-light" data-i18n="hero.overline">GMP · DIGEMID · IoT · Audit trail</span>
+        <h1 data-i18n="hero.title">The Future of Pharmaceutical Quality Management</h1>
+        <p class="hero-subtitle" data-i18n="hero.subtitle"></p>
+        <div class="hero-buttons">
+          <a href="#workspace" data-magnetic class="btn btn-primary btn-lg" data-i18n="hero.cta_start">Get Started</a>
+          <a href="#plans" data-magnetic class="btn btn-ghost-light btn-lg" data-i18n="hero.cta_plans">View plans</a>
+        </div>
+        <p class="hero-trust" data-i18n="hero.trust"></p>
       </div>
 
-      <p class="hero-footer" data-i18n="hero.footer"></p>
-    </div>
-
-    <div class="hero-visual">
-      <div class="image-wrapper">
-        <img src="public/assets/images/pharmaceutical-laboratory.jpg" alt="Pharmaceutical Laboratory" data-i18n-alt="hero.image_alt" class="main-img">
-
+      <div class="hero-visual">
+        <img src="public/assets/images/pharmaceutical-laboratory.jpg" alt="" data-i18n-alt="hero.image_alt" class="hero-img">
         <div class="floating-card">
-          <span class="status-badge" data-i18n="hero.badge"></span>
+          <span class="status-badge" data-i18n="hero.badge">Ready for release</span>
           <p data-i18n="hero.badge_text"></p>
         </div>
       </div>
     </div>
   </section>
 
-
-
-<section class="section section-mint" id="workspace">
+  <!-- Segment access to the Web Application -->
+  <section class="section section-mint" id="workspace">
     <div class="container">
       <span class="overline" data-i18n="workspace.overline">Get started</span>
       <h2 data-i18n="workspace.title">Choose your workspace</h2>
@@ -165,6 +163,7 @@
       </div>
     </div>
   </section>
+
   <!-- Features: accordion with a preview panel -->
   <section class="section section-gray" id="features">
     <div class="container">
@@ -226,6 +225,7 @@
       </div>
     </div>
   </section>
+
   <!-- About the Product video -->
   <section class="section" id="product">
     <div class="container product-grid">
@@ -237,7 +237,7 @@
       <div class="video-player" data-video="product">
         <img src="public/assets/images/pharmaceutical-laboratory.jpg" alt="">
         <span class="video-title" data-i18n="product.player_title">DoofPlus · About the Product</span>
-        <button class="play-btn" type="button" data-video-play aria-label="Play video"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></button>
+        <button class="play-btn" type="button" data-video-play data-i18n-aria="product.play"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></button>
         <span class="video-duration">3:00</span>
         <span class="video-progress" aria-hidden="true"></span>
       </div>
@@ -253,6 +253,7 @@
       </div>
     </div>
   </section>
+
   <!-- Benefits -->
   <section class="section section-dark" id="benefits">
     <div class="container">
@@ -267,6 +268,7 @@
       </div>
     </div>
   </section>
+
   <!-- Plans with monthly / annual billing -->
   <section class="section section-gray" id="plans">
     <div class="container">
@@ -313,6 +315,7 @@
       <p class="plans-note" data-i18n="plans.note"></p>
     </div>
   </section>
+
   <!-- About us -->
   <section class="section section-mint" id="about">
     <div class="container about-grid">
@@ -333,6 +336,7 @@
       </div>
     </div>
   </section>
+
   <!-- Team -->
   <section class="section" id="team">
     <div class="container">
@@ -368,13 +372,14 @@
         <p data-i18n="team.video_text"></p>
         <div class="video-player video-player-dark" data-video="team">
           <span class="video-title" data-i18n="team.player_title">DoofPlus · About the Team</span>
-          <button class="play-btn" type="button" data-video-play aria-label="Play the team video"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></button>
+          <button class="play-btn" type="button" data-video-play data-i18n-aria="team.play"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></button>
         </div>
         <a href="#" class="link-teal" data-video-link="team" data-i18n="team.youtube">Can't play the video? Watch it on YouTube →</a>
         <p class="video-soon" hidden data-video-soon="team" data-i18n="team.soon"></p>
       </div>
     </div>
   </section>
+
   <!-- Testimonials -->
   <section class="section section-gray" id="testimonials">
     <div class="container">
@@ -382,23 +387,24 @@
       <h2 data-i18n="testimonials.title">What our clients think</h2>
       <div class="grid-3">
         <figure class="testimonial">
-          <span class="stars" role="img" aria-label="5 out of 5 stars">★★★★★</span>
+          <span class="stars" role="img" data-i18n-aria="testimonials.rating5">★★★★★</span>
           <blockquote data-i18n="testimonials.t1_text"></blockquote>
           <figcaption><strong>Dr. M. Vargas</strong><span data-i18n="testimonials.t1_role"></span></figcaption>
         </figure>
         <figure class="testimonial">
-          <span class="stars" role="img" aria-label="5 out of 5 stars">★★★★★</span>
+          <span class="stars" role="img" data-i18n-aria="testimonials.rating5">★★★★★</span>
           <blockquote data-i18n="testimonials.t2_text"></blockquote>
           <figcaption><strong>Ing. R. Flores</strong><span data-i18n="testimonials.t2_role"></span></figcaption>
         </figure>
         <figure class="testimonial">
-          <span class="stars" role="img" aria-label="4 out of 5 stars">★★★★☆</span>
+          <span class="stars" role="img" data-i18n-aria="testimonials.rating4">★★★★☆</span>
           <blockquote data-i18n="testimonials.t3_text"></blockquote>
           <figcaption><strong>Q.F. L. Castro</strong><span data-i18n="testimonials.t3_role"></span></figcaption>
         </figure>
       </div>
     </div>
   </section>
+
   <!-- FAQ -->
   <section class="section" id="faq">
     <div class="container">
@@ -430,6 +436,7 @@
       <p class="faq-more"><strong data-i18n="faq.more"></strong> <a href="#contact" class="link-teal" data-i18n="faq.contact"></a></p>
     </div>
   </section>
+
   <!-- Contact: inquiry form (US04) -->
   <section class="section section-teal" id="contact">
     <div class="container contact-grid">
@@ -472,7 +479,8 @@
     </div>
   </section>
 </main>
-<!-- Footer: brand, link groups, language switcher and segment access -->
+
+<!-- Footer -->
 <footer class="footer">
   <div class="container">
     <div class="footer-grid">
@@ -518,8 +526,6 @@
   </div>
 </footer>
 
-<script src="public/assets/scripts/translations/en.js"></script>
-<script src="public/assets/scripts/translations/es.js"></script>
-<script src="public/assets/scripts/main.js"></script>
+<script type="module" src="public/assets/scripts/main.js"></script>
 </body>
 </html>

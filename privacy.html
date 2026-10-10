@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-  <!-- Meta tags for responsive design and character encoding -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Privacy Policy of DoofPlus under Peru's Personal Data Protection Law (Law N.° 29733).">
@@ -9,21 +8,23 @@
   <meta name="author" content="IngesCompanyCC">
   <title data-i18n="meta.privacy">Privacy Policy - DoofPlus</title>
   <link rel="icon" href="favicon.ico" sizes="any">
-  <link rel="stylesheet" href="public/assets/styles/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="public/assets/styles/main.css">
 </head>
 <body class="page-simple">
 <a class="skip-link" href="#main" data-i18n="nav.skip">Skip to main content</a>
-<!-- Header section with back link and language switcher -->
 <header class="navbar">
-  <div class="brand-group">
-    <a href="index.html" class="logo"><img src="public/assets/images/doofplus-logo.png" alt="DoofPlus" class="logo-img"></a>
-    <a href="index.html" class="link-teal" data-i18n="nav.back">← Back to DoofPlus</a>
-  </div>
-  <div class="lang-switch">
-    <button class="lang-btn active" data-lang="en">EN</button>
-    <span class="separator">|</span>
-    <button class="lang-btn" data-lang="es">ES</button>
+  <div class="container navbar-inner">
+    <div class="brand-group">
+      <a href="index.html" class="brand"><img src="public/assets/images/doofplus-logo.png" alt="DoofPlus" class="brand-logo"></a>
+      <a href="index.html" class="link-teal back-link"><span class="desktop-only" data-i18n="nav.back">← Back to DoofPlus</span><span class="mobile-only" data-i18n="nav.back_short">← Back</span></a>
+    </div>
+    <div class="lang-switch" role="group" aria-label="Language">
+      <button class="lang-btn active" type="button" data-lang="en">EN</button>
+      <button class="lang-btn" type="button" data-lang="es">ES</button>
+    </div>
   </div>
 </header>
 
@@ -45,14 +46,12 @@
   <div class="container footer-bottom">
     <p data-i18n="footer.copyright"></p>
     <div class="footer-legal">
-      <a href="terms.html" data-i18n="footer.terms"></a>
-      <a href="privacy.html" data-i18n="footer.privacy"></a>
+      <a href="terms.html" class="underline" data-i18n="footer.terms"></a>
+      <a href="privacy.html" class="underline" data-i18n="footer.privacy"></a>
     </div>
   </div>
 </footer>
 
-<script src="public/assets/scripts/translations/en.js"></script>
-<script src="public/assets/scripts/translations/es.js"></script>
-<script src="public/assets/scripts/main.js"></script>
+<script type="module" src="public/assets/scripts/main.js"></script>
 </body>
 </html>
