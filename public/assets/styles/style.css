@@ -1778,3 +1778,55 @@ h1 {
     align-items: flex-start;
   }
 }
+
+/* ---------- Skip link (a11y) ---------- */
+.skip-link {
+  position: absolute;
+  top: -48px;
+  left: 16px;
+  z-index: 100;
+  padding: 10px 18px;
+  border-radius: 0 0 8px 8px;
+  background: var(--teal);
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
+/* ---------- Custom cursors ---------- */
+body {
+  cursor: url("../cursors/cursor.svg") 3 3, auto;
+}
+
+a,
+button,
+summary,
+[role="button"],
+input[type="submit"] {
+  cursor: url("../cursors/pointer.svg") 3 3, pointer;
+}
+
+a *,
+button * {
+  cursor: inherit;
+}
+
+input[type="email"],
+input[type="text"],
+textarea {
+  cursor: url("../cursors/text.svg") 16 16, text;
+}
+
+/* Touch screens keep the system cursors. */
+@media (hover: none) {
+  body,
+  a,
+  button,
+  input {
+    cursor: auto;
+  }
+}
