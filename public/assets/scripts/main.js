@@ -1,5 +1,34 @@
 ﻿const translations = { en, es };
-let currentLang = 'en';
+const LANG_KEY = 'doofplus-lang';
+/** BCP 47 tags of the supported languages: English (en-US) and Latin American Spanish (es-419). */
+const LANG_TAGS = { en: 'en-US', es: 'es-419' };
+
+/**
+ * Reads the language chosen on a previous visit. Storage can be blocked
+ * (e.g. private windows), so it falls back to English.
+ */
+function readSavedLanguage() {
+  try {
+    const lang = localStorage.getItem(LANG_KEY);
+    return lang in LANG_TAGS ? lang : 'en';
+  } catch (error) {
+    return 'en';
+  }
+}
+
+/**
+ * Remembers the chosen language for the next visit.
+ * @param {string} lang - The language code to remember.
+ */
+function saveLanguage(lang) {
+  try {
+    localStorage.setItem(LANG_KEY, lang);
+  } catch (error) {
+    // Without storage the preference only lasts for the current page.
+  }
+}
+
+let currentLang = readSavedLanguage();
 
 /**
  * Updates the text content of elements with the data-i18n attribute based on the current language.
@@ -21,15 +50,20 @@ function updateTexts() {
     element.placeholder = translate(element.getAttribute('data-i18n-placeholder'));
   });
 
+  document.querySelectorAll('[data-i18n-alt]').forEach(element => {
+    element.alt = translate(element.getAttribute('data-i18n-alt'));
+  });
+
+  document.documentElement.lang = LANG_TAGS[currentLang];
+
   /**
    * Updates the active state of language buttons based on the current language.
    * It removes the 'active' class from all buttons and adds it to the button corresponding to the current language.
    */
   document.querySelectorAll('.lang-btn').forEach(btn => {
-    btn.classList.remove('active');
-    if (btn.getAttribute('data-lang') === currentLang) {
-      btn.classList.add('active');
-    }
+    const active = btn.getAttribute('data-lang') === currentLang;
+    btn.classList.toggle('active', active);
+    btn.setAttribute('aria-pressed', String(active));
   });
 }
 
@@ -40,6 +74,7 @@ function updateTexts() {
 document.querySelectorAll('.lang-btn').forEach(btn => {
   btn.addEventListener('click', (e) => {
     currentLang = e.target.getAttribute('data-lang');
+    saveLanguage(currentLang);
     updateTexts();
     updateBilling();
     renderContactConfirmation();
@@ -315,3 +350,51 @@ if (menuToggle && mobileMenu) {
   });
 }
 
+const MAX_MAGNETIC_OFFSET = 8;
+
+/**
+ * Magnetic effect for call-to-action buttons marked with data-magnetic:
+ * the button follows the mouse slightly and returns with a soft bounce.
+ * It only reacts to a mouse and is disabled when the visitor prefers reduced motion.
+ */
+if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+  document.querySelectorAll('[data-magnetic]').forEach(element => {
+    element.addEventListener('pointermove', event => {
+      if (event.pointerType !== 'mouse') return;
+      const rect = element.getBoundingClientRect();
+      const x = ((event.clientX - rect.left) / rect.width - 0.5) * 2;
+      const y = ((event.clientY - rect.top) / rect.height - 0.5) * 2;
+      element.style.transition = 'transform 80ms linear';
+      element.style.transform = `translate(${(x * MAX_MAGNETIC_OFFSET).toFixed(1)}px, ${(y * MAX_MAGNETIC_OFFSET).toFixed(1)}px)`;
+    });
+
+    element.addEventListener('pointerleave', () => {
+      element.style.transition = 'transform 500ms cubic-bezier(0.34, 1.56, 0.64, 1)';
+      element.style.transform = '';
+    });
+  });
+}
+
+/**
+ * Highlights in the desktop and mobile navigation the link of the section in view.
+ */
+const sectionLinks = [...document.querySelectorAll('.nav-links a[href^="#"], .mobile-links a[href^="#"]')];
+const linkedSections = [...new Set(sectionLinks.map(link => link.getAttribute('href')))]
+  .map(id => document.querySelector(id))
+  .filter(Boolean);
+
+if (linkedSections.length && 'IntersectionObserver' in window) {
+  const sectionObserver = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+      sectionLinks.forEach(link => {
+        const current = link.getAttribute('href') === `#${entry.target.id}`;
+        link.classList.toggle('active', current);
+        if (current) link.setAttribute('aria-current', 'location');
+        else link.removeAttribute('aria-current');
+      });
+    });
+  }, { rootMargin: '-45% 0px -50% 0px' });
+
+  linkedSections.forEach(section => sectionObserver.observe(section));
+}
