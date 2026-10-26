@@ -224,7 +224,16 @@
     "overline": "Contact",
     "title": "Ready to digitize your laboratory's quality management?",
     "text": "Send us your question about the platform or the plans and our team will reply within two business days.",
-    "info": "doofplus.inges@gmail.com · Lima, Perú"
+    "info": "doofplus.inges@gmail.com · Lima, Perú",
+    "channels_title": "Direct contact",
+    "email_label": "Email",
+    "phone_label": "Phone",
+    "phone_val": "+51 (1) 234-5678",
+    "address_label": "Headquarters",
+    "address_val": "Av. Primavera 2390, Monterrico, Lima, Perú",
+    "hours_label": "Business hours",
+    "hours_val": "Mon - Fri: 8:00 AM - 6:00 PM (PET)",
+    "social_title": "Social media accounts"
   },
   "form": {
     "name": "Full name",
@@ -263,7 +272,8 @@
     "privacy": "Privacy Policy",
     "copyright": "Copyright © 2026 IngesCompanyCC. All rights reserved.",
     "qa_access": "QA/QC Access",
-    "prod_access": "Production Access"
+    "prod_access": "Production Access",
+    "social": "Social Media"
   },
   "legal": {
     "overline": "Legal",
@@ -294,5 +304,23 @@
     "p4_text": "We share only the data needed with service providers: ThingsBoard (IoT telemetry), Niubiz (payments) and our cloud provider, under confidentiality agreements.",
     "p5_title": "5. Your rights",
     "p5_text": "You may exercise your rights of access, rectification, cancellation and opposition (ARCO) by writing to doofplus.inges@gmail.com. You may also file a claim with Peru's National Authority for Personal Data Protection."
+  },
+  "social": {
+    "linkedin": "DoofPlus on LinkedIn",
+    "github": "DoofPlus on GitHub",
+    "twitter": "DoofPlus on X (Twitter)",
+    "youtube": "DoofPlus on YouTube",
+    "instagram": "DoofPlus on Instagram"
+  },
+  "cta": {
+    "overline": "Start using DoofPlus",
+    "title": "Ready to modernize your pharmaceutical quality management?",
+    "subtitle": "Experience our deployed web application in action. Centralize batch records, manage deviations in real time and comply with DIGEMID standards.",
+    "btn_app": "Launch Web Application →",
+    "btn_register": "Register your laboratory",
+    "quick_label": "Quick access by environment:",
+    "qa_env": "QA/QC Environment →",
+    "prod_env": "Production Environment →",
+    "trust": "Cloud-native SaaS · Instant access · Role-based security · DIGEMID & GMP aligned"
   }
 }

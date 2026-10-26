@@ -224,7 +224,16 @@
     "overline": "Contacto",
     "title": "¿Listo para digitalizar la gestión de calidad de tu laboratorio?",
     "text": "Envíanos tu consulta sobre la plataforma o los planes y nuestro equipo te responderá en un plazo de dos días hábiles.",
-    "info": "doofplus.inges@gmail.com · Lima, Perú"
+    "info": "doofplus.inges@gmail.com · Lima, Perú",
+    "channels_title": "Contacto directo",
+    "email_label": "Correo electrónico",
+    "phone_label": "Teléfono",
+    "phone_val": "+51 (1) 234-5678",
+    "address_label": "Sede principal",
+    "address_val": "Av. Primavera 2390, Monterrico, Lima, Perú",
+    "hours_label": "Horario de atención",
+    "hours_val": "Lun - Vie: 8:00 - 18:00 (PET)",
+    "social_title": "Cuentas de redes sociales"
   },
   "form": {
     "name": "Nombre completo",
@@ -263,7 +272,8 @@
     "privacy": "Política de Privacidad",
     "copyright": "Copyright © 2026 IngesCompanyCC. Todos los derechos reservados.",
     "qa_access": "Acceso QA/QC",
-    "prod_access": "Acceso Producción"
+    "prod_access": "Acceso Producción",
+    "social": "Redes Sociales"
   },
   "legal": {
     "overline": "Legal",
@@ -294,5 +304,23 @@
     "p4_text": "Solo compartimos los datos necesarios con proveedores del servicio: ThingsBoard (telemetría IoT), Niubiz (pagos) y nuestro proveedor en la nube, bajo acuerdos de confidencialidad.",
     "p5_title": "5. Tus derechos",
     "p5_text": "Puedes ejercer tus derechos de acceso, rectificación, cancelación y oposición (ARCO) escribiendo a doofplus.inges@gmail.com. También puedes presentar un reclamo ante la Autoridad Nacional de Protección de Datos Personales del Perú."
+  },
+  "social": {
+    "linkedin": "DoofPlus en LinkedIn",
+    "github": "DoofPlus en GitHub",
+    "twitter": "DoofPlus en X (Twitter)",
+    "youtube": "DoofPlus en YouTube",
+    "instagram": "DoofPlus en Instagram"
+  },
+  "cta": {
+    "overline": "Comienza a usar DoofPlus",
+    "title": "¿Listo para modernizar la gestión de calidad de tu laboratorio?",
+    "subtitle": "Prueba nuestra aplicación web desplegada en acción. Centraliza registros de lote, gestiona desviaciones en tiempo real y cumple con los estándares de DIGEMID.",
+    "btn_app": "Abrir aplicación web →",
+    "btn_register": "Registra tu laboratorio",
+    "quick_label": "Acceso rápido por entorno:",
+    "qa_env": "Entorno QA/QC →",
+    "prod_env": "Entorno Producción →",
+    "trust": "SaaS en la nube · Acceso instantáneo · Seguridad por roles · Compatible con BPM y DIGEMID"
   }
 }
