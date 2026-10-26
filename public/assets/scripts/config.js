@@ -16,6 +16,7 @@ export const VIDEO_URLS = {
 
 /** Web Application routes opened by the segment access buttons (US48). */
 export const APP_ROUTES = {
+  app: '',
   'sign-in': '/sign-in',
   qa: '/sign-in/qa',
   production: '/sign-in/production',
