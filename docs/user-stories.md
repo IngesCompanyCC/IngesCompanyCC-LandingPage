@@ -1,7 +1,7 @@
 # User Stories
 
 ## Overview
-This document presents the functional and technical requirement user stories for the **DoofPlus** Landing Page application (IngesCompany). The requirements are organized around the core business epic: **EP01 - Landing Page & Public Experience**.
+This document presents the functional and technical requirement user stories for the **DoofPlus** Landing Page application (IngesCompanyCC). The requirements are organized around the core business epic: **EP01 - Landing Page & Public Experience**.
 
 ## US01: Visualización de la propuesta de valor
 **Title:** Visualización de la propuesta de valor  
@@ -80,11 +80,11 @@ This document presents the functional and technical requirement user stories for
 **Title:** Visualización del equipo y de la startup  
 **Context:** EP01 - Landing Page & Public Experience  
 **Description:**  
-*Como visitante, quiero conocer a IngesCompany y a su equipo para generar confianza en la solución.*
+*Como visitante, quiero conocer a IngesCompanyCC y a su equipo para generar confianza en la solución.*
 
 **Acceptance Criteria:**
 - **Scenario 1: Consulta del equipo:** Dado que el visitante accede a la sección About Us, cuando se muestra el equipo, entonces visualiza la foto, el nombre, el rol y la descripción de cada integrante.
-- **Scenario 2: Consulta de la startup:** Dado que el visitante revisa la sección About Us, cuando la sección se muestra, entonces visualiza la descripción de IngesCompany y los pilares del servicio.
+- **Scenario 2: Consulta de la startup:** Dado que el visitante revisa la sección About Us, cuando la sección se muestra, entonces visualiza la descripción de IngesCompanyCC y los pilares del servicio.
 
 ---
 
@@ -121,7 +121,6 @@ This document presents the functional and technical requirement user stories for
 **Acceptance Criteria:**
 - **Scenario 1: Acceso del segmento QA/QC:** Dado que el visitante pertenece al segmento QA/QC, cuando elige acceder a la Web Application como especialista QA/QC, entonces es dirigido al inicio de sesión del entorno de calidad de la Web Application.
 - **Scenario 2: Acceso del segmento Producción:** Dado que el visitante pertenece al segmento Producción, cuando elige acceder a la Web Application como jefe de producción, entonces es dirigido al inicio de sesión del entorno de producción de la Web Application.
-- **Scenario 3: Acceso a través de Call-to-Action final antes del footer:** Dado que el visitante llega al final del contenido de la Landing Page, antes del footer, entonces visualiza una sección destacada con llamado a la acción (Call to Action) para acceder directamente a la Web Application desplegada y registrar su laboratorio.
 
 ---
 

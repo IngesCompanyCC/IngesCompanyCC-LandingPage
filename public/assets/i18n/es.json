@@ -12,11 +12,11 @@
     "plans": "Planes",
     "sign_in": "Iniciar sesión",
     "get_started": "Comenzar",
-    "back": "← Volver a DoofPlus",
     "menu": "Abrir menú",
     "skip": "Saltar al contenido principal",
-    "back_short": "← Volver",
-    "close": "Cerrar menú"
+    "close": "Cerrar menú",
+    "back": "← Volver a DoofPlus",
+    "back_short": "← Volver"
   },
   "hero": {
     "overline": "BPM · DIGEMID · IoT · Audit trail",
@@ -130,38 +130,6 @@
     "b4_title": "En servidores o infraestructura",
     "b4_text": "Una plataforma SaaS en la nube con suscripción mensual o anual que crece con tu laboratorio."
   },
-  "about": {
-    "overline": "Nosotros",
-    "title": "DoofPlus: transformando la gestión de calidad farmacéutica con IoT y cumplimiento regulatorio",
-    "text": "DoofPlus es desarrollado por IngesCompanyCC, una startup que crea soluciones digitales para industrias altamente reguladas. La plataforma centraliza la información de los procesos de manufactura y control de calidad, y brinda a los laboratorios registros ordenados y confiables que respaldan el cumplimiento de las Buenas Prácticas de Manufactura (BPM) y los requisitos de DIGEMID.",
-    "tag1": "Trazabilidad",
-    "tag2": "Integridad de datos",
-    "tag3": "Cumplimiento regulatorio",
-    "tag4": "Tecnología abierta",
-    "mission_title": "Nuestra misión",
-    "mission_text": "Diseñar soluciones tecnológicas abiertas que digitalicen y optimicen la gestión de calidad farmacéutica, integrando datos operativos e IoT para fortalecer la trazabilidad, el cumplimiento regulatorio y la confiabilidad de los procesos.",
-    "vision_title": "Nuestra visión",
-    "vision_text": "Ser un referente en soluciones digitales de aseguramiento de la calidad para la industria farmacéutica latinoamericana, impulsando tecnologías abiertas que mejoren la trazabilidad, la integridad de datos y la gestión del cumplimiento."
-  },
-  "team": {
-    "overline": "Nuestro equipo",
-    "title": "Las personas detrás de DoofPlus",
-    "subtitle": "Estudiantes de Ingeniería de Software de la UPC que diseñan, construyen y validan DoofPlus.",
-    "role": "Ingeniero de Software",
-    "role_female": "Ingeniera de Software",
-    "marcelo": "Puntual y comunicativo; trabaja con C++ y Python y disfruta resolver problemas en equipo.",
-    "yhoshua": "Curioso por la tecnología y tranquilo bajo presión; sigue las últimas tendencias del software.",
-    "cristina": "Responsable, organizada y comprometida; con conocimientos en programación, bases de datos y desarrollo de proyectos.",
-    "nestor": "Apasionado por el desarrollo de aplicaciones, las bases de datos y las metodologías ágiles.",
-    "rodolfo": "Puntual y responsable; atraído por la programación desde sus primeros cursos escolares.",
-    "video_title": "Conoce al equipo",
-    "video_text": "Un video corto en el que los integrantes de IngesCompanyCC se presentan y cuentan cómo construyen DoofPlus.",
-    "player_title": "DoofPlus · About the Team",
-    "play": "Reproducir el video del equipo",
-    "youtube": "¿No se reproduce el video? Míralo en YouTube →",
-    "soon": "El video del equipo se publicará pronto en el canal de YouTube de DoofPlus.",
-    "unavailable": "El video no está disponible en este momento. Puedes verlo en el canal de YouTube de DoofPlus."
-  },
   "plans": {
     "overline": "Planes",
     "title": "Planes simples para cada laboratorio",
@@ -219,6 +187,38 @@
     "a5": "Los datos se cifran en tránsito, el acceso es por roles con autenticación de dos factores en los pasos críticos y cada cambio queda registrado en el audit trail. Los datos personales se tratan según la Ley de Protección de Datos Personales del Perú (Ley N.° 29733).",
     "more": "¿No encontraste tu respuesta?",
     "contact": "Contacta al equipo de DoofPlus →"
+  },
+  "about": {
+    "overline": "Nosotros",
+    "title": "DoofPlus: transformando la gestión de calidad farmacéutica con IoT y cumplimiento regulatorio",
+    "text": "DoofPlus es desarrollado por IngesCompanyCC, una startup que crea soluciones digitales para industrias altamente reguladas. La plataforma centraliza la información de los procesos de manufactura y control de calidad, y brinda a los laboratorios registros ordenados y confiables que respaldan el cumplimiento de las Buenas Prácticas de Manufactura (BPM) y los requisitos de DIGEMID.",
+    "tag1": "Trazabilidad",
+    "tag2": "Integridad de datos",
+    "tag3": "Cumplimiento regulatorio",
+    "tag4": "Tecnología abierta",
+    "mission_title": "Nuestra misión",
+    "mission_text": "Diseñar soluciones tecnológicas abiertas que digitalicen y optimicen la gestión de calidad farmacéutica, integrando datos operativos e IoT para fortalecer la trazabilidad, el cumplimiento regulatorio y la confiabilidad de los procesos.",
+    "vision_title": "Nuestra visión",
+    "vision_text": "Ser un referente en soluciones digitales de aseguramiento de la calidad para la industria farmacéutica latinoamericana, impulsando tecnologías abiertas que mejoren la trazabilidad, la integridad de datos y la gestión del cumplimiento."
+  },
+  "team": {
+    "overline": "Nuestro equipo",
+    "title": "Las personas detrás de DoofPlus",
+    "subtitle": "Estudiantes de Ingeniería de Software de la UPC que diseñan, construyen y validan DoofPlus.",
+    "role": "Ingeniero de Software",
+    "role_female": "Ingeniera de Software",
+    "marcelo": "Puntual y comunicativo; trabaja con C++ y Python y disfruta resolver problemas en equipo.",
+    "yhoshua": "Curioso por la tecnología y tranquilo bajo presión; sigue las últimas tendencias del software.",
+    "cristina": "Responsable, organizada y comprometida; con conocimientos en programación, bases de datos y desarrollo de proyectos.",
+    "nestor": "Apasionado por el desarrollo de aplicaciones, las bases de datos y las metodologías ágiles.",
+    "rodolfo": "Puntual y responsable; atraído por la programación desde sus primeros cursos escolares.",
+    "video_title": "Conoce al equipo",
+    "video_text": "Un video corto en el que los integrantes de IngesCompanyCC se presentan y cuentan cómo construyen DoofPlus.",
+    "player_title": "DoofPlus · About the Team",
+    "play": "Reproducir el video del equipo",
+    "youtube": "¿No se reproduce el video? Míralo en YouTube →",
+    "soon": "El video del equipo se publicará pronto en el canal de YouTube de DoofPlus.",
+    "unavailable": "El video no está disponible en este momento. Puedes verlo en el canal de YouTube de DoofPlus."
   },
   "contact": {
     "overline": "Contacto",
@@ -305,13 +305,6 @@
     "p5_title": "5. Tus derechos",
     "p5_text": "Puedes ejercer tus derechos de acceso, rectificación, cancelación y oposición (ARCO) escribiendo a doofplus.inges@gmail.com. También puedes presentar un reclamo ante la Autoridad Nacional de Protección de Datos Personales del Perú."
   },
-  "social": {
-    "linkedin": "DoofPlus en LinkedIn",
-    "github": "DoofPlus en GitHub",
-    "twitter": "DoofPlus en X (Twitter)",
-    "youtube": "DoofPlus en YouTube",
-    "instagram": "DoofPlus en Instagram"
-  },
   "cta": {
     "overline": "Comienza a usar DoofPlus",
     "title": "¿Listo para modernizar la gestión de calidad de tu laboratorio?",
@@ -322,5 +315,12 @@
     "qa_env": "Entorno QA/QC →",
     "prod_env": "Entorno Producción →",
     "trust": "SaaS en la nube · Acceso instantáneo · Seguridad por roles · Compatible con BPM y DIGEMID"
+  },
+  "social": {
+    "linkedin": "DoofPlus en LinkedIn",
+    "github": "DoofPlus en GitHub",
+    "twitter": "DoofPlus en X (Twitter)",
+    "youtube": "DoofPlus en YouTube",
+    "instagram": "DoofPlus en Instagram"
   }
 }

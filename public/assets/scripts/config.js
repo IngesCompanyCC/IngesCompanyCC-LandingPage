@@ -2,7 +2,7 @@
  * Settings of the Landing Page that depend on other DoofPlus products.
  */
 
-/** Base URL of the DoofPlus Web Application. Set it when the Web Application is deployed. */
+/** Base URL of the DoofPlus Web Application, published on Firebase Hosting. */
 export const WEB_APP_URL = 'https://ingescompanycc-frontend.web.app';
 
 /**
@@ -16,8 +16,7 @@ export const VIDEO_URLS = {
 
 /** Web Application routes opened by the segment access buttons (US48). */
 export const APP_ROUTES = {
-  app: '',
-  'sign-in': '/sign-in',
+  signin: '/sign-in',
   qa: '/sign-in/qa',
   production: '/sign-in/production',
   register: '/register'

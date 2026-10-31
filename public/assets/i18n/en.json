@@ -12,11 +12,11 @@
     "plans": "Plans",
     "sign_in": "Sign in",
     "get_started": "Get Started",
-    "back": "← Back to DoofPlus",
     "menu": "Open menu",
     "skip": "Skip to main content",
-    "back_short": "← Back",
-    "close": "Close menu"
+    "close": "Close menu",
+    "back": "← Back to DoofPlus",
+    "back_short": "← Back"
   },
   "hero": {
     "overline": "GMP · DIGEMID · IoT · Audit trail",
@@ -130,38 +130,6 @@
     "b4_title": "In servers or infrastructure",
     "b4_text": "A cloud SaaS platform with monthly or annual subscription that scales with your laboratory."
   },
-  "about": {
-    "overline": "About us",
-    "title": "DoofPlus: Transforming Pharmaceutical Quality Management with IoT and Regulatory Compliance",
-    "text": "DoofPlus is developed by IngesCompanyCC, a startup that builds digital solutions for highly regulated industries. The platform centralizes the information of manufacturing and quality control processes, giving laboratories organized, reliable records that support compliance with Good Manufacturing Practices (GMP) and DIGEMID requirements.",
-    "tag1": "Traceability",
-    "tag2": "Data integrity",
-    "tag3": "Regulatory compliance",
-    "tag4": "Open technology",
-    "mission_title": "Our mission",
-    "mission_text": "Design open technological solutions that digitize and optimize pharmaceutical quality management, integrating operational and IoT data to strengthen traceability, regulatory compliance and process reliability.",
-    "vision_title": "Our vision",
-    "vision_text": "Become a reference in digital quality-assurance solutions for the Latin American pharmaceutical industry, enabling open technologies that improve traceability, data integrity and compliance management."
-  },
-  "team": {
-    "overline": "Our team",
-    "title": "The people behind DoofPlus",
-    "subtitle": "Software Engineering students at UPC who design, build and validate DoofPlus.",
-    "role": "Software Engineer",
-    "role_female": "Software Engineer",
-    "marcelo": "Punctual and communicative; works with C++ and Python and enjoys solving problems as a team.",
-    "yhoshua": "Curious about technology and calm under pressure; follows the latest trends in software.",
-    "cristina": "Responsible, organized and committed; experienced in programming, databases and project development.",
-    "nestor": "Passionate about application development, databases and agile methodologies.",
-    "rodolfo": "Punctual and responsible; drawn to programming since his first school courses.",
-    "video_title": "Meet the team",
-    "video_text": "A short video where the members of IngesCompanyCC present themselves and explain how they build DoofPlus.",
-    "player_title": "DoofPlus · About the Team",
-    "play": "Play the team video",
-    "youtube": "Can't play the video? Watch it on YouTube →",
-    "soon": "The team video will be published soon on the DoofPlus YouTube channel.",
-    "unavailable": "The video is not available right now. You can watch it on the DoofPlus YouTube channel."
-  },
   "plans": {
     "overline": "Plans",
     "title": "Simple plans for every laboratory",
@@ -219,6 +187,38 @@
     "a5": "Data is encrypted in transit, access is role-based with two-factor authentication at critical steps, and every change is recorded in the audit trail. Personal data is processed under Peru's Personal Data Protection Law (Law N.° 29733).",
     "more": "Didn't find your answer?",
     "contact": "Contact the DoofPlus team →"
+  },
+  "about": {
+    "overline": "About us",
+    "title": "DoofPlus: Transforming Pharmaceutical Quality Management with IoT and Regulatory Compliance",
+    "text": "DoofPlus is developed by IngesCompanyCC, a startup that builds digital solutions for highly regulated industries. The platform centralizes the information of manufacturing and quality control processes, giving laboratories organized, reliable records that support compliance with Good Manufacturing Practices (GMP) and DIGEMID requirements.",
+    "tag1": "Traceability",
+    "tag2": "Data integrity",
+    "tag3": "Regulatory compliance",
+    "tag4": "Open technology",
+    "mission_title": "Our mission",
+    "mission_text": "Design open technological solutions that digitize and optimize pharmaceutical quality management, integrating operational and IoT data to strengthen traceability, regulatory compliance and process reliability.",
+    "vision_title": "Our vision",
+    "vision_text": "Become a reference in digital quality-assurance solutions for the Latin American pharmaceutical industry, enabling open technologies that improve traceability, data integrity and compliance management."
+  },
+  "team": {
+    "overline": "Our team",
+    "title": "The people behind DoofPlus",
+    "subtitle": "Software Engineering students at UPC who design, build and validate DoofPlus.",
+    "role": "Software Engineer",
+    "role_female": "Software Engineer",
+    "marcelo": "Punctual and communicative; works with C++ and Python and enjoys solving problems as a team.",
+    "yhoshua": "Curious about technology and calm under pressure; follows the latest trends in software.",
+    "cristina": "Responsible, organized and committed; experienced in programming, databases and project development.",
+    "nestor": "Passionate about application development, databases and agile methodologies.",
+    "rodolfo": "Punctual and responsible; drawn to programming since his first school courses.",
+    "video_title": "Meet the team",
+    "video_text": "A short video where the members of IngesCompanyCC present themselves and explain how they build DoofPlus.",
+    "player_title": "DoofPlus · About the Team",
+    "play": "Play the team video",
+    "youtube": "Can't play the video? Watch it on YouTube →",
+    "soon": "The team video will be published soon on the DoofPlus YouTube channel.",
+    "unavailable": "The video is not available right now. You can watch it on the DoofPlus YouTube channel."
   },
   "contact": {
     "overline": "Contact",
@@ -305,13 +305,6 @@
     "p5_title": "5. Your rights",
     "p5_text": "You may exercise your rights of access, rectification, cancellation and opposition (ARCO) by writing to doofplus.inges@gmail.com. You may also file a claim with Peru's National Authority for Personal Data Protection."
   },
-  "social": {
-    "linkedin": "DoofPlus on LinkedIn",
-    "github": "DoofPlus on GitHub",
-    "twitter": "DoofPlus on X (Twitter)",
-    "youtube": "DoofPlus on YouTube",
-    "instagram": "DoofPlus on Instagram"
-  },
   "cta": {
     "overline": "Start using DoofPlus",
     "title": "Ready to modernize your pharmaceutical quality management?",
@@ -322,5 +315,12 @@
     "qa_env": "QA/QC Environment →",
     "prod_env": "Production Environment →",
     "trust": "Cloud-native SaaS · Instant access · Role-based security · DIGEMID & GMP aligned"
+  },
+  "social": {
+    "linkedin": "DoofPlus on LinkedIn",
+    "github": "DoofPlus on GitHub",
+    "twitter": "DoofPlus on X (Twitter)",
+    "youtube": "DoofPlus on YouTube",
+    "instagram": "DoofPlus on Instagram"
   }
 }
