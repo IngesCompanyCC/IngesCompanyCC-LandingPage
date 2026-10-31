@@ -179,9 +179,7 @@
     "q4": "¿Puedo cambiar o cancelar mi plan?",
     "a4": "Sí. El administrador del laboratorio puede pasar de Standard Lab a Enterprise, o al revés, o cancelar antes de la fecha de renovación. El pago anual ahorra el equivalente a dos meses.",
     "q5": "¿Cómo se protege mi información?",
-    "a5": "Los datos se cifran en tránsito, el acceso es por roles con autenticación de dos factores en los pasos críticos y cada cambio queda registrado en el audit trail. Los datos personales se tratan según la Ley de Protección de Datos Personales del Perú (Ley N.° 29733).",
-    "more": "¿No encontraste tu respuesta?",
-    "contact": "Contacta al equipo de DoofPlus →"
+    "a5": "Los datos se cifran en tránsito, el acceso es por roles con autenticación de dos factores en los pasos críticos y cada cambio queda registrado en el audit trail. Los datos personales se tratan según la Ley de Protección de Datos Personales del Perú (Ley N.° 29733)."
   },
   "about": {
     "overline": "Nosotros",
@@ -214,41 +212,6 @@
     "youtube": "¿No se reproduce el video? Míralo en YouTube →",
     "soon": "El video del equipo se publicará pronto en el canal de YouTube de DoofPlus.",
     "unavailable": "El video no está disponible en este momento. Puedes verlo en el canal de YouTube de DoofPlus."
-  },
-  "contact": {
-    "overline": "Contacto",
-    "title": "¿Listo para digitalizar la gestión de calidad de tu laboratorio?",
-    "text": "Envíanos tu consulta sobre la plataforma o los planes y nuestro equipo te responderá en un plazo de dos días hábiles.",
-    "info": "doofplus.inges@gmail.com · Lima, Perú",
-    "channels_title": "Contacto directo",
-    "email_label": "Correo electrónico",
-    "phone_label": "Teléfono",
-    "phone_val": "+51 (1) 234-5678",
-    "address_label": "Sede principal",
-    "address_val": "Av. Primavera 2390, Monterrico, Lima, Perú",
-    "hours_label": "Horario de atención",
-    "hours_val": "Lun - Vie: 8:00 - 18:00 (PET)",
-    "social_title": "Cuentas de redes sociales"
-  },
-  "form": {
-    "name": "Nombre completo",
-    "name_ph": "p. ej. María Pérez",
-    "email": "Correo de trabajo",
-    "email_ph": "nombre@laboratorio.com.pe",
-    "lab": "Nombre del laboratorio",
-    "optional": "(opcional)",
-    "lab_ph": "p. ej. Laboratorios Andinos S.A.C.",
-    "message": "Tu consulta",
-    "message_ph": "Cuéntanos qué te gustaría saber sobre DoofPlus.",
-    "submit": "Enviar consulta",
-    "disclaimer": "Al enviar aceptas nuestra Política de Privacidad. Respondemos en un plazo de dos días hábiles.",
-    "error_banner": "Tu consulta no se envió. Revisa los campos resaltados.",
-    "error_name": "Ingresa tu nombre.",
-    "error_email": "Ingresa un correo válido, p. ej. nombre@laboratorio.com.pe.",
-    "error_message": "Escribe tu consulta.",
-    "success_title": "Consulta enviada",
-    "success_text": "Gracias, {name}. Nuestro equipo te responderá a <strong>{email}</strong> en un plazo de dos días hábiles.",
-    "again": "Enviar otra consulta"
   },
   "footer": {
     "tagline": "Gestión de calidad farmacéutica con IoT y cumplimiento regulatorio.",
