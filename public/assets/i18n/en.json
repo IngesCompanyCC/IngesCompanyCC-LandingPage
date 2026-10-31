@@ -304,11 +304,10 @@
     "overline": "Start using DoofPlus",
     "title": "Ready to modernize your pharmaceutical quality management?",
     "subtitle": "Experience our deployed web application in action. Centralize batch records, manage deviations in real time and comply with DIGEMID standards.",
-    "btn_app": "Launch Web Application →",
-    "btn_register": "Register your laboratory",
-    "quick_label": "Quick access by environment:",
-    "qa_env": "QA/QC Environment →",
-    "prod_env": "Production Environment →",
+    "qa_btn": "I'm a QA/QC Specialist · Sign in →",
+    "prod_btn": "I'm a Production Supervisor · Sign in →",
+    "new_label": "New laboratory?",
+    "register": "Register your laboratory →",
     "trust": "Cloud-native SaaS · Instant access · Role-based security · DIGEMID & GMP aligned"
   },
   "social": {

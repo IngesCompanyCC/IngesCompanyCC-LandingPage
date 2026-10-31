@@ -304,11 +304,10 @@
     "overline": "Comienza a usar DoofPlus",
     "title": "¿Listo para modernizar la gestión de calidad de tu laboratorio?",
     "subtitle": "Prueba nuestra aplicación web desplegada en acción. Centraliza registros de lote, gestiona desviaciones en tiempo real y cumple con los estándares de DIGEMID.",
-    "btn_app": "Abrir aplicación web →",
-    "btn_register": "Registra tu laboratorio",
-    "quick_label": "Acceso rápido por entorno:",
-    "qa_env": "Entorno QA/QC →",
-    "prod_env": "Entorno Producción →",
+    "qa_btn": "Soy especialista QA/QC · Iniciar sesión →",
+    "prod_btn": "Soy supervisor de producción · Iniciar sesión →",
+    "new_label": "¿Laboratorio nuevo?",
+    "register": "Registra tu laboratorio →",
     "trust": "SaaS en la nube · Acceso instantáneo · Seguridad por roles · Compatible con BPM y DIGEMID"
   },
   "social": {
