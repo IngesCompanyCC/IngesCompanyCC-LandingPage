@@ -39,7 +39,8 @@ function initializeMobileMenu() {
 }
 
 function highlightSectionInView() {
-  const links = [...document.querySelectorAll('.nav-links a[href^="#"], .mobile-links a[href^="#"]')];
+  // Placeholder links (href="#") have no section to highlight.
+  const links = [...document.querySelectorAll('.nav-links a[href^="#"]:not([href="#"]), .mobile-links a[href^="#"]:not([href="#"])')];
   const ids = [...new Set(links.map(link => link.getAttribute('href')))];
   const sections = ids.map(id => document.querySelector(id)).filter(Boolean);
   if (!sections.length || !('IntersectionObserver' in window)) return;
