@@ -1,24 +1,19 @@
 {
-  "name": " ",
-  "version": "0.0.1",
-  "description": "",
+  "name": "ingescompanycc-landing-page",
+  "version": "1.0.2",
+  "description": "Landing Page of DoofPlus, by IngesCompanyCC.",
   "private": true,
   "keywords": [
-    ""
+    "doofplus",
+    "landing-page",
+    "pharmaceutical-quality"
   ],
-  "license": "",
-  "author": "",
+  "license": "MIT",
+  "author": "IngesCompanyCC",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack serve --open --config webpack.config.dev.js",
-    "build": "webpack --config webpack.config.prod.js"
+    "start": "http-server -p 8080 -c-1 -o"
   },
   "devDependencies": {
-    "copy-webpack-plugin": "^11.0.0",
-    "html-webpack-plugin": "^5.6.0",
-    "webpack": "^5.91.0",
-    "webpack-cli": "^5.1.4",
-    "webpack-dev-server": "^5.0.4",
-    "webpack-merge": "^5.10.0"
+    "http-server": "^14.1.1"
   }
 }
