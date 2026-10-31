@@ -978,19 +978,20 @@ a.contact-channel-item:hover {
   margin-top: 16px;
 }
 
-.footer-social-link {
+.footer-grid .footer-social-link {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   width: 34px;
   height: 34px;
+  margin-bottom: 0;
   border-radius: 50%;
   background: var(--navy-soft);
   color: #cbd5e1;
   transition: background-color 0.2s, color 0.2s, transform 0.15s;
 }
 
-.footer-social-link:hover {
+.footer-grid .footer-social-link:hover {
   background: var(--teal);
   color: #fff;
   transform: translateY(-2px);

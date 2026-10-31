@@ -225,6 +225,7 @@
 .footer-grid span {
   display: block;
   margin-bottom: 8px;
+  overflow-wrap: anywhere;
 }
 
 .footer-grid a:hover {
