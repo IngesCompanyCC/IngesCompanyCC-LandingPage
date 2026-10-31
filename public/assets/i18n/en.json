@@ -143,7 +143,6 @@
     "standard_f2": "Up to 10 user accounts",
     "standard_f3": "Real-time telemetry dashboard",
     "standard_f4": "Digital batch records and audit trail",
-    "standard_cta": "Get Standard Lab",
     "enterprise_name": "Enterprise",
     "enterprise_desc": "For large institutions and public health entities with several lines.",
     "enterprise_badge": "Most complete",
@@ -153,8 +152,7 @@
     "enterprise_f2": "Unlimited IoT devices and users",
     "enterprise_f3": "Multi-site management",
     "enterprise_f4": "Advanced KPI analytics",
-    "enterprise_cta": "Get Enterprise",
-    "note": "Prices in US dollars; taxes not included. You can change or cancel your plan before the renewal date."
+    "note": "Prices in US dollars; taxes not included. The plan is chosen when the laboratory is registered in the Web Application, and it can be changed or cancelled before the renewal date."
   },
   "testimonials": {
     "overline": "Testimonials",

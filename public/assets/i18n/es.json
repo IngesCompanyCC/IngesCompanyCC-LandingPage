@@ -143,7 +143,6 @@
     "standard_f2": "Hasta 10 cuentas de usuario",
     "standard_f3": "Dashboard de telemetría en tiempo real",
     "standard_f4": "Registros digitales de lote y audit trail",
-    "standard_cta": "Elegir Standard Lab",
     "enterprise_name": "Enterprise",
     "enterprise_desc": "Para grandes instituciones y entidades de salud pública con varias líneas.",
     "enterprise_badge": "El más completo",
@@ -153,8 +152,7 @@
     "enterprise_f2": "Dispositivos IoT y usuarios ilimitados",
     "enterprise_f3": "Gestión multisede",
     "enterprise_f4": "Analítica avanzada de KPI",
-    "enterprise_cta": "Elegir Enterprise",
-    "note": "Precios en dólares estadounidenses; no incluyen impuestos. Puedes cambiar o cancelar tu plan antes de la fecha de renovación."
+    "note": "Precios en dólares estadounidenses; no incluyen impuestos. El plan se elige al registrar el laboratorio en la Web Application y se puede cambiar o cancelar antes de la fecha de renovación."
   },
   "testimonials": {
     "overline": "Testimonios",
