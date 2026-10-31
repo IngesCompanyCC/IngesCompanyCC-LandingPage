@@ -63,8 +63,11 @@ Texts are referenced from the HTML with `data-i18n` attributes. To add a text, a
 The scripts are ES modules and the texts are loaded with `fetch`, so the site must be served over HTTP (opening `index.html` directly from the file system does not load them):
 
 ```bash
-python -m http.server 8080
+npm install
+npm start
 ```
+
+The site opens on http://localhost:8080. While it runs on `localhost`, the sign-in and call-to-action buttons open the Web Application of the local development server (http://localhost:5173); on GitHub Pages they open the published Web Application (`public/assets/scripts/config.js`).
 
 ## Deployment
 
